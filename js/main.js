@@ -33,7 +33,7 @@
     { id: 'ev-italy', num: '·', label: 'Aug 2026 · Lamborghini & Maranello · Italy' },
     { id: 'ev-dnb', num: '·', label: 'Sep 2026 · D&B Business Eminence Awards · Singapore' },
     { id: 'ev-gwia', num: '·', label: 'Sep 2026 · Global Women of Influence Awards · Singapore' },
-    { id: 'ev-egypt', num: '·', label: 'Sep 2026 · An Evening Beneath the Pyramids · Egypt' },
+    { id: 'ev-egypt', num: '·', label: 'Sep 2026 · JT Foxx’s Mega Success · Egypt' },
     { id: 'ev-dubai', num: '·', label: 'Oct 2026 · Global Icons Awards · Dubai' },
     { id: 'awards',        num: '05', label: 'Awards & Recognition' },
     { id: 'connect',       num: '06', label: 'Connect' },
