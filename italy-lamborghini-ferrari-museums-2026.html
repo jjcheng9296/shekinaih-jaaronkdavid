@@ -592,30 +592,56 @@ details.ed-transcript[open] summary::after{content:"\2212"}
 .ed-end{height:40px}
 </style>
 <style id="page-editorial">
-/* Italy watch-first (2026-10-13): the address plays first; text opens with Read more */
+/* Italy redesign (2026-10-13): video first, short hook, story, seven ways as cards, Europe, Ferrari */
 .ed-h1,.ed-h2,.ed-h3{color:var(--gold2);filter:drop-shadow(0 2px 18px rgba(232,184,109,.25))}
 .ed-watch{max-width:900px;margin:0 auto;padding:76px clamp(16px,5vw,40px) 0}
 .ed-watch .ed-video{padding:0;margin:0}
-.ed-watch-head{padding-top:14px}
+.ed-watch-head{padding-top:16px}
 .ed-watch-head .ed-kicker{margin-bottom:6px}
-.ed-watch .ed-h1{font-size:clamp(27px,5vw,44px);margin-bottom:6px}
-#watch-address,#watch-blessing{scroll-margin-top:72px}
+.ed-watch .ed-h1{font-size:clamp(28px,5vw,46px);margin-bottom:8px}
+.ed-hook{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,2.6vw,25px);line-height:1.4;color:#fff;margin:0 0 14px}
+.ed-chips{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}
+.ed-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 14px;border-radius:999px;border:1px solid rgba(232,184,109,.45);
+  font-family:'Cinzel',serif;font-size:10.5px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--gold2);background:rgba(232,184,109,.06)}
+.ed-chip:hover{background:rgba(232,184,109,.14);color:#fff}
+#watch-address,#watch-blessing,#transcript-address,#seven-ways{scroll-margin-top:72px}
 .ed-vlabel,.ed-figure figcaption{font-size:16px;color:rgba(255,255,255,.92)}
+.ed-vbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin-top:12px}
+.ed-play{display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:8px 20px 8px 8px;border:0;border-radius:999px;cursor:pointer;
+  background:linear-gradient(135deg,#F0C660,#C8923A);color:#0b0d20;box-shadow:0 10px 28px rgba(200,146,58,.35);
+  font-family:'Cinzel',serif;font-size:12.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;transition:transform .15s,box-shadow .15s}
+.ed-play:hover{transform:translateY(-1px);box-shadow:0 14px 34px rgba(200,146,58,.5)}
+.ed-play:active{transform:translateY(0)}
+.ed-play-icon{width:34px;height:34px;border-radius:50%;background:#0b0d20;position:relative;flex:none}
+.ed-play-icon::after{content:"";position:absolute;left:13px;top:10px;border-style:solid;border-width:7px 0 7px 11px;border-color:transparent transparent transparent #F0C660}
+.ed-play-len{font-family:'DM Sans',sans-serif;font-weight:700;letter-spacing:.5px;padding-left:10px;border-left:1px solid rgba(11,13,32,.35)}
+.ed-vnote{display:inline-flex;align-items:center;min-height:30px;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:13px;color:rgba(255,255,255,.82)}
 .ed-transcript-body p{font-size:16px}
-details.ed-more{margin-top:10px}
-details.ed-more>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);border-bottom:1px solid rgba(232,184,109,.35)}
-details.ed-more>summary::-webkit-details-marker{display:none}
-details.ed-more>summary::after{content:"+";font-size:18px;line-height:1}
-details.ed-more[open]>summary::after{content:"2"}
-details.ed-more[open]>summary .more-open{display:none}
-details.ed-more:not([open])>summary .more-close{display:none}
-details.ed-more .ed-body{padding-top:6px}
-.ed-more .ed-lead{font-size:17px;line-height:1.65;margin:8px 0 14px}
-.ed-sec-head{max-width:900px;margin:0 auto;padding:46px clamp(16px,5vw,40px) 0}
+.ed-story .ed-lead{font-size:18px;line-height:1.65;margin-bottom:14px}
+.ed-quote-big{margin:22px 0 6px;padding:0 0 0 18px;border-left:2px solid var(--gold)}
+.ed-quote-big p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(22px,3vw,28px);line-height:1.4;color:#fff;margin:0 0 6px !important}
+.ed-quote-big cite{font-style:normal;font-size:13px;color:rgba(255,255,255,.75)}
+.ed-seven{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px;counter-reset:way}
+.ed-seven li{position:relative;margin:0 !important;padding:16px 16px 14px 62px !important;border:1px solid rgba(232,184,109,.24);border-radius:14px;
+  background:linear-gradient(180deg,rgba(232,184,109,.07),rgba(255,255,255,.015));counter-increment:way}
+.ed-seven li::before{content:counter(way);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-weight:700;font-size:15px;color:#0b0d20;background:var(--gold2)}
+.ed-seven h3{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;line-height:1.2;color:#fff;margin:2px 0 6px}
+.ed-seven p{font-size:15.5px !important;line-height:1.6 !important;margin:0 !important;color:rgba(255,255,255,.88) !important}
+.ed-seven li:last-child:nth-child(odd){grid-column:1 / -1}
+@media(max-width:640px){.ed-seven{grid-template-columns:1fr}}
+.ed-europe{margin-top:8px}
+.ed-europe ul{list-style:none;padding:0;margin:10px 0 0}
+.ed-europe li{position:relative;padding-left:22px !important;margin-bottom:.6em !important}
+.ed-europe li::before{content:"";position:absolute;left:4px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--gold2)}
+.ed-sec-head{max-width:900px;margin:0 auto;padding:50px clamp(16px,5vw,40px) 0}
 .ed-sec-head .ed-h2{margin-bottom:4px}
 .ed-sec-head + .ed-video{margin-top:14px}
-.ed-after{max-width:900px;margin:0 auto;padding:0 clamp(16px,5vw,40px)}
-@media(max-width:600px){.ed-watch{padding-top:68px;padding-left:14px;padding-right:14px}.ed-watch .ed-h1{font-size:28px}.ed-video,.ed-sec-head,.ed-after,.ed-figure,.ed-transcript-wrap{padding-left:16px;padding-right:16px}}
+.ed-after{max-width:780px;margin:0 auto;padding:12px clamp(16px,5vw,40px) 0}
+.ed-after p{font-size:17px;line-height:1.72;color:rgba(255,255,255,.94)}
+@media(max-width:600px){.ed-watch{padding-top:68px;padding-left:14px;padding-right:14px}.ed-watch .ed-h1{font-size:29px}
+  .ed-video,.ed-sec-head,.ed-after,.ed-section,.ed-figure,.ed-transcript-wrap{padding-left:16px;padding-right:16px}
+  .ed-section{padding-top:38px}.ed-sec-head{padding-top:42px}.ed-hook{font-size:20px}.ed-story .ed-lead{font-size:17px}}
 </style>
 <script type="application/ld+json">
 {
@@ -627,7 +653,7 @@ details.ed-more .ed-body{padding-top:6px}
   "https://shekinaihsiewsinyap-jaaronkdavid.com/images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg"
  ],
  "datePublished": "2026-10-12T18:40:15+08:00",
- "dateModified": "2026-10-13T09:18:19+08:00",
+ "dateModified": "2026-10-13T09:38:29+08:00",
  "mainEntityOfPage": "https://shekinaihsiewsinyap-jaaronkdavid.com/italy-lamborghini-ferrari-museums-2026.html",
  "url": "https://shekinaihsiewsinyap-jaaronkdavid.com/italy-lamborghini-ferrari-museums-2026.html",
  "inLanguage": "en",
@@ -696,24 +722,61 @@ details.ed-more .ed-body{padding-top:6px}
 <main id="story">
 
 <section class="ed-watch" aria-labelledby="h-title">
-<div class="ed-video" id="watch-address"><div class="ed-vimeo"><iframe src="https://player.vimeo.com/video/1234909165?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+<div class="ed-video" id="watch-address"><div class="ed-vimeo"><iframe id="vimeo-1234909165" src="https://player.vimeo.com/video/1234909165?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
   allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="eager" title="SHEKINAIH SIEW SIN YAP Addresses Leaders at the Lamborghini Museum, Italy"></iframe></div>
-  <p class="ed-vlabel"><b>Watch the address</b> · 4:51 · English captions</p></div>
+  <div class="ed-vlabel ed-vbar"><button type="button" class="ed-play" data-play="1234909165" aria-label="Play: SHEKINAIH SIEW SIN YAP Addresses Leaders at the Lamborghini Museum, Italy"><span class="ed-play-icon" aria-hidden="true"></span><span class="ed-play-text">Watch the address</span><span class="ed-play-len">4:51</span></button><span class="ed-vnote">English captions</span></div></div>
   <div class="ed-watch-head">
     <p class="ed-kicker">Italy · August 2026 · A JT Foxx event</p>
     <h1 class="ed-h1" id="h-title">Faith and Service at the Lamborghini Museum</h1>
-    <details class="ed-more"><summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
-<div class="ed-body">
-  <p class="ed-lead">At JT Foxx’s Italy event, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced the work she shares with ministry and business partner <span class="name-inline-silver">J AARON K DAVID</span>.</p>
-  <h2 class="ed-h2" id="h-address">“We Are Here to Serve You and Humanity”</h2>
-  <p>With <span class="name-inline-silver">J AARON K DAVID</span> beside her, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced their business and ministry work. She outlined seven areas of spiritual service, shared her account of that work and spoke about Europe’s future.</p>
-  <p>The recording preserves her message in her own words, from the opening question to her invitation to those seeking spiritual counsel.</p>
-</div></details>
+    <p class="ed-hook">Who in the room had a question only Heaven could answer?</p>
+    <div class="ed-chips">
+      <a class="ed-chip" href="#seven-ways">Seven ways ↓</a>
+      <a class="ed-chip" href="#watch-blessing">Blessing · 0:44</a>
+      <a class="ed-chip" href="#transcript-address" data-open="transcript-address">Transcript</a>
+    </div>
   </div>
 </section>
-<div class="ed-transcript-wrap"><a class="ed-jump" href="#watch-blessing">Also watch: Museo Ferrari · 0:44 ↓</a></div>
+
+<section class="ed-section ed-body ed-story" aria-labelledby="h-address">
+  <p class="ed-eyebrow">The address</p>
+  <h2 class="ed-h2" id="h-address">“Well, Today Is Your Lucky Day”</h2>
+  <p class="ed-lead">She began with a show of hands. “How many of you have unanswered questions that you wish can receive a direct answer from Heaven instantaneously?” <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> asked the leaders and entrepreneurs at JT Foxx’s event. Then came the promise: “Well, today is your lucky day.”</p>
+  <p>With <span class="name-inline-silver">J AARON K DAVID</span>, her ministry and business partner, at her side, she introduced the two organisations they represent: CE Global International, a Singapore freight-forwarding company, and Crowned Eagles Global Heaven Throne Room Ministry. “We are here to serve you and humanity,” she said.</p>
+</section>
+<figure class="ed-figure zoom-trigger " tabindex="0" role="button" aria-label="Enlarge photo: The Lamborghini Museum · Italy · August 2026"
+        data-lb-src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" data-lb-label="The Lamborghini Museum · Italy · August 2026" data-lb-caption="SHEKINAIH SIEW SIN YAP addresses the gathering, with J AARON K DAVID beside her, at the Lamborghini museum.">
+  <picture><source srcset="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.webp" type="image/webp"/><img id="italy-opening-photo" src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" width="1280" height="852" alt="SHEKINAIH SIEW SIN YAP speaks into a microphone in the Lamborghini museum, J AARON K DAVID standing beside her, with a classic car and seated guests" loading="lazy" decoding="async"/></picture>
+  <figcaption><span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> addresses the gathering, with <span class="name-inline-silver">J AARON K DAVID</span> beside her, at the Lamborghini museum.</figcaption>
+</figure>
+
+<section class="ed-section ed-body" id="seven-ways" aria-labelledby="h-seven">
+  <p class="ed-eyebrow">In her words</p>
+  <h2 class="ed-h2" id="h-seven">Seven Ways They Serve</h2>
+  <ol class="ed-seven">
+    <li><h3>A bridge between Heaven and earth</h3><p>Serving as advocates between Heaven and humanity.</p></li>
+    <li><h3>Heaven's answers</h3><p>Bringing Heaven's answer and solution to individuals, families, businesses, communities, governments and nations.</p></li>
+    <li><h3>Preparing for what lies ahead</h3><p>Alerting humanity to what is coming, and how danger may be avoided, minimised or overcome.</p></li>
+    <li><h3>Heaven's decrees</h3><p>Concerning nations, leaders and world events. She cited the two presidential terms of Donald Trump, the appointments of Anwar Ibrahim and Tharman Shanmugaratnam, and rain after Cape Town's drought.</p></li>
+    <li><h3>Healing and restoration</h3><p>Healings, miracles and restoration, including conditions that human methods have been unable to treat or resolve.</p></li>
+    <li><h3>Solving the unsolvable</h3><p>Personal, spiritual, financial, family, organisational, governmental, national and international. “When every human solution has failed, contact the God of the universe.”</p></li>
+    <li><h3>Destiny imparters from Heaven</h3><p>Helping nations, cities, communities and families fulfil their original divine destiny and receive continuous breakthrough.</p></li>
+  </ol>
+</section>
+
+<section class="ed-section ed-body ed-europe" aria-labelledby="h-europe">
+  <p class="ed-eyebrow">To close</p>
+  <h2 class="ed-h2" id="h-europe">A Word for Europe</h2>
+  <p>She ended with a message she said she saw written “word by word” on the green boards in Heaven:</p>
+  <ul>
+    <li>Europe is under Heaven’s judgment, and its leaders should seek Heaven’s direction “to minimize the judgment and prevent greater suffering.”</li>
+    <li>Those called to a purpose greater than themselves can learn why they were sent to the earth.</li>
+    <li>The earth has “less than 40 years” before it is destroyed by fire, as prophesied in 2 Peter 3:7 and 3:10, so “undo what is wrong and begin to do what is right.”</li>
+    <li>Fulfil your destiny while there is still time.</li>
+  </ul>
+  <div class="ed-quote-big"><p>“When all else fails … contact us.”</p><cite><span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> · The Lamborghini museum · August 2026</cite></div>
+</section>
 <div class="ed-transcript-wrap"><details class="ed-transcript" id="transcript-address">
-  <summary>Read transcript · The Lamborghini museum address</summary>
+  <summary>Read the full transcript · The Lamborghini museum address</summary>
   <div class="ed-transcript-body">
     <p class="ed-note">Checked against the recording with several transcription passes. Words that could not be confirmed are marked [unclear]. The host's introduction is labelled; the rest is spoken by <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span>.</p>
     <span class="ed-spk">Host</span>
@@ -732,23 +795,15 @@ details.ed-more .ed-body{padding-top:6px}
     <p><span class="ed-ts">04:49</span> Contact us, thank you.</p>
   </div>
 </details></div>
-<figure class="ed-figure zoom-trigger " tabindex="0" role="button" aria-label="Enlarge photo: The Lamborghini Museum · Italy · August 2026"
-        data-lb-src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" data-lb-label="The Lamborghini Museum · Italy · August 2026" data-lb-caption="SHEKINAIH SIEW SIN YAP addresses the gathering, with J AARON K DAVID beside her, at the Lamborghini museum.">
-  <picture><source srcset="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.webp" type="image/webp"/><img id="italy-opening-photo" src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" width="1280" height="852" alt="SHEKINAIH SIEW SIN YAP speaks into a microphone in the Lamborghini museum, J AARON K DAVID standing beside her, with a classic car and seated guests" loading="lazy" decoding="async"/></picture>
-  <figcaption><span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> addresses the gathering, with <span class="name-inline-silver">J AARON K DAVID</span> beside her, at the Lamborghini museum.</figcaption>
-</figure>
 
 <div class="ed-sec-head">
   <p class="ed-eyebrow">Maranello · That evening</p>
   <h2 class="ed-h2" id="h-ferrari">A Blessing at Museo Ferrari</h2>
 </div>
-<div class="ed-video" id="watch-blessing"><div class="ed-vimeo"><iframe src="https://player.vimeo.com/video/1235084092?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+<div class="ed-video" id="watch-blessing"><div class="ed-vimeo"><iframe id="vimeo-1235084092" src="https://player.vimeo.com/video/1235084092?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
   allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="lazy" title="SHEKINAIH SIEW SIN YAP Blesses Every Guest at Museo Ferrari, Maranello"></iframe></div>
-  <p class="ed-vlabel"><b>Watch the blessing</b> · 0:44 · English captions</p></div>
-<div class="ed-after"><details class="ed-more"><summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
-<div class="ed-body">
-  <p>Among the Formula One cars at Museo Ferrari, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> offered a blessing for the guests and their families, then invited those seeking prayer to speak with her.</p>
-</div></details></div>
+  <div class="ed-vlabel ed-vbar"><button type="button" class="ed-play" data-play="1235084092" aria-label="Play: SHEKINAIH SIEW SIN YAP Blesses Every Guest at Museo Ferrari, Maranello"><span class="ed-play-icon" aria-hidden="true"></span><span class="ed-play-text">Watch the blessing</span><span class="ed-play-len">0:44</span></button><span class="ed-vnote">English captions</span></div></div>
+<div class="ed-after"><p>Among the Formula One cars, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> moved between the tables and spoke a blessing over the room: “I want to open Heaven and bring down the very best of Heaven upon everyone.” She then invited anyone seeking prayer or a word from Heaven to speak with her.</p></div>
 <div class="ed-transcript-wrap"><details class="ed-transcript" id="transcript-blessing">
   <summary>Read transcript · The blessing at Museo Ferrari</summary>
   <div class="ed-transcript-body">
@@ -763,6 +818,22 @@ details.ed-more .ed-body{padding-top:6px}
   <img src="images/italy-2026/italy-2026-museo-ferrari-maranello-evening.jpg" width="1280" height="855" alt="SHEKINAIH SIEW SIN YAP speaks to guests at dinner tables inside Museo Ferrari, Maranello" loading="lazy" decoding="async"/>
   <figcaption><span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> offers a blessing during the evening gathering at Museo Ferrari, Maranello.</figcaption>
 </figure>
+<script id="ed-play-js">
+/* Play buttons under Vimeo players: start the matching video through the Vimeo player API */
+document.querySelectorAll('.ed-play[data-play]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var f = document.getElementById('vimeo-' + b.getAttribute('data-play'));
+    if (!f) return;
+    f.scrollIntoView({behavior: 'smooth', block: 'center'});
+    var send = function () { f.contentWindow.postMessage(JSON.stringify({method: 'play'}), '*'); };
+    if (f.getAttribute('loading') === 'lazy') f.setAttribute('loading', 'eager');
+    send(); setTimeout(send, 600);
+  });
+});
+document.querySelectorAll('[data-open]').forEach(function (a) {
+  a.addEventListener('click', function () { var d = document.getElementById(a.getAttribute('data-open')); if (d) d.open = true; });
+});
+</script>
 
 <div class="ed-end"></div>
 </main>
