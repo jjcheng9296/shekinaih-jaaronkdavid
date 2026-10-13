@@ -592,15 +592,30 @@ details.ed-transcript[open] summary::after{content:"\2212"}
 .ed-end{height:40px}
 </style>
 <style id="page-editorial">
-/* Italy video-first (2026-10-13): gold headings, larger labels and captions, phone padding */
+/* Italy watch-first (2026-10-13): the address plays first; text opens with Read more */
 .ed-h1,.ed-h2,.ed-h3{color:var(--gold2);filter:drop-shadow(0 2px 18px rgba(232,184,109,.25))}
-.ed-open{max-width:900px}
-.ed-lead{font-size:17px;line-height:1.65}
-#watch-address{margin-top:20px;scroll-margin-top:76px}
-#watch-blessing{scroll-margin-top:76px}
+.ed-watch{max-width:900px;margin:0 auto;padding:76px clamp(16px,5vw,40px) 0}
+.ed-watch .ed-video{padding:0;margin:0}
+.ed-watch-head{padding-top:14px}
+.ed-watch-head .ed-kicker{margin-bottom:6px}
+.ed-watch .ed-h1{font-size:clamp(27px,5vw,44px);margin-bottom:6px}
+#watch-address,#watch-blessing{scroll-margin-top:72px}
 .ed-vlabel,.ed-figure figcaption{font-size:16px;color:rgba(255,255,255,.92)}
 .ed-transcript-body p{font-size:16px}
-@media(max-width:600px){.ed-open{padding-top:78px}.ed-h1{font-size:34px}.ed-lead{font-size:16.5px;line-height:1.7}.ed-open,.ed-video,.ed-section,.ed-figure,.ed-transcript-wrap{padding-left:22px;padding-right:22px}}
+details.ed-more{margin-top:10px}
+details.ed-more>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold2);border-bottom:1px solid rgba(232,184,109,.35)}
+details.ed-more>summary::-webkit-details-marker{display:none}
+details.ed-more>summary::after{content:"+";font-size:18px;line-height:1}
+details.ed-more[open]>summary::after{content:"2"}
+details.ed-more[open]>summary .more-open{display:none}
+details.ed-more:not([open])>summary .more-close{display:none}
+details.ed-more .ed-body{padding-top:6px}
+.ed-more .ed-lead{font-size:17px;line-height:1.65;margin:8px 0 14px}
+.ed-sec-head{max-width:900px;margin:0 auto;padding:46px clamp(16px,5vw,40px) 0}
+.ed-sec-head .ed-h2{margin-bottom:4px}
+.ed-sec-head + .ed-video{margin-top:14px}
+.ed-after{max-width:900px;margin:0 auto;padding:0 clamp(16px,5vw,40px)}
+@media(max-width:600px){.ed-watch{padding-top:68px;padding-left:14px;padding-right:14px}.ed-watch .ed-h1{font-size:28px}.ed-video,.ed-sec-head,.ed-after,.ed-figure,.ed-transcript-wrap{padding-left:16px;padding-right:16px}}
 </style>
 <script type="application/ld+json">
 {
@@ -612,7 +627,7 @@ details.ed-transcript[open] summary::after{content:"\2212"}
   "https://shekinaihsiewsinyap-jaaronkdavid.com/images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg"
  ],
  "datePublished": "2026-10-12T18:40:15+08:00",
- "dateModified": "2026-10-13T09:16:48+08:00",
+ "dateModified": "2026-10-13T09:18:19+08:00",
  "mainEntityOfPage": "https://shekinaihsiewsinyap-jaaronkdavid.com/italy-lamborghini-ferrari-museums-2026.html",
  "url": "https://shekinaihsiewsinyap-jaaronkdavid.com/italy-lamborghini-ferrari-museums-2026.html",
  "inLanguage": "en",
@@ -680,14 +695,22 @@ details.ed-transcript[open] summary::after{content:"\2212"}
 <!-- ─── HERO ─── -->
 <main id="story">
 
-<header class="ed-open">
-  <p class="ed-kicker">Italy · August 2026 · A JT Foxx event</p>
-  <h1 class="ed-h1">Faith and Service at the Lamborghini Museum</h1>
-  <p class="ed-lead">At JT Foxx’s Italy event, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced the work she shares with ministry and business partner <span class="name-inline-silver">J AARON K DAVID</span>. Watch her address, followed by a blessing at Museo Ferrari.</p>
-</header>
+<section class="ed-watch" aria-labelledby="h-title">
 <div class="ed-video" id="watch-address"><div class="ed-vimeo"><iframe src="https://player.vimeo.com/video/1234909165?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
   allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="eager" title="SHEKINAIH SIEW SIN YAP Addresses Leaders at the Lamborghini Museum, Italy"></iframe></div>
   <p class="ed-vlabel"><b>Watch the address</b> · 4:51 · English captions</p></div>
+  <div class="ed-watch-head">
+    <p class="ed-kicker">Italy · August 2026 · A JT Foxx event</p>
+    <h1 class="ed-h1" id="h-title">Faith and Service at the Lamborghini Museum</h1>
+    <details class="ed-more"><summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+<div class="ed-body">
+  <p class="ed-lead">At JT Foxx’s Italy event, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced the work she shares with ministry and business partner <span class="name-inline-silver">J AARON K DAVID</span>.</p>
+  <h2 class="ed-h2" id="h-address">“We Are Here to Serve You and Humanity”</h2>
+  <p>With <span class="name-inline-silver">J AARON K DAVID</span> beside her, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced their business and ministry work. She outlined seven areas of spiritual service, shared her account of that work and spoke about Europe’s future.</p>
+  <p>The recording preserves her message in her own words, from the opening question to her invitation to those seeking spiritual counsel.</p>
+</div></details>
+  </div>
+</section>
 <div class="ed-transcript-wrap"><a class="ed-jump" href="#watch-blessing">Also watch: Museo Ferrari · 0:44 ↓</a></div>
 <div class="ed-transcript-wrap"><details class="ed-transcript" id="transcript-address">
   <summary>Read transcript · The Lamborghini museum address</summary>
@@ -709,27 +732,23 @@ details.ed-transcript[open] summary::after{content:"\2212"}
     <p><span class="ed-ts">04:49</span> Contact us, thank you.</p>
   </div>
 </details></div>
-
-<section class="ed-section ed-body" aria-labelledby="h-address">
-  <p class="ed-eyebrow">The museum address</p>
-  <h2 class="ed-h2" id="h-address">“We Are Here to Serve You and Humanity”</h2>
-  <p>With <span class="name-inline-silver">J AARON K DAVID</span> beside her, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> introduced their business and ministry work. She outlined seven areas of spiritual service, shared her account of that work and spoke about Europe’s future.</p>
-  <p>The recording preserves her message in her own words, from the opening question to her invitation to those seeking spiritual counsel.</p>
-</section>
 <figure class="ed-figure zoom-trigger " tabindex="0" role="button" aria-label="Enlarge photo: The Lamborghini Museum · Italy · August 2026"
         data-lb-src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" data-lb-label="The Lamborghini Museum · Italy · August 2026" data-lb-caption="SHEKINAIH SIEW SIN YAP addresses the gathering, with J AARON K DAVID beside her, at the Lamborghini museum.">
   <picture><source srcset="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.webp" type="image/webp"/><img id="italy-opening-photo" src="images/italy-2026/italy-2026-shekinaih-aaron-museum-address-04.jpg" width="1280" height="852" alt="SHEKINAIH SIEW SIN YAP speaks into a microphone in the Lamborghini museum, J AARON K DAVID standing beside her, with a classic car and seated guests" loading="lazy" decoding="async"/></picture>
   <figcaption><span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> addresses the gathering, with <span class="name-inline-silver">J AARON K DAVID</span> beside her, at the Lamborghini museum.</figcaption>
 </figure>
 
-<section class="ed-section ed-body" aria-labelledby="h-ferrari">
+<div class="ed-sec-head">
   <p class="ed-eyebrow">Maranello · That evening</p>
   <h2 class="ed-h2" id="h-ferrari">A Blessing at Museo Ferrari</h2>
-  <p>Among the Formula One cars at Museo Ferrari, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> offered a blessing for the guests and their families, then invited those seeking prayer to speak with her.</p>
-</section>
+</div>
 <div class="ed-video" id="watch-blessing"><div class="ed-vimeo"><iframe src="https://player.vimeo.com/video/1235084092?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
   allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen loading="lazy" title="SHEKINAIH SIEW SIN YAP Blesses Every Guest at Museo Ferrari, Maranello"></iframe></div>
   <p class="ed-vlabel"><b>Watch the blessing</b> · 0:44 · English captions</p></div>
+<div class="ed-after"><details class="ed-more"><summary><span class="more-open">Read more</span><span class="more-close">Show less</span></summary>
+<div class="ed-body">
+  <p>Among the Formula One cars at Museo Ferrari, <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> offered a blessing for the guests and their families, then invited those seeking prayer to speak with her.</p>
+</div></details></div>
 <div class="ed-transcript-wrap"><details class="ed-transcript" id="transcript-blessing">
   <summary>Read transcript · The blessing at Museo Ferrari</summary>
   <div class="ed-transcript-body">
