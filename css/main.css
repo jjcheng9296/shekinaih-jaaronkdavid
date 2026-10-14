@@ -105,11 +105,10 @@ body::before {
   font-size: clamp(15.5px, 1.15vw, 17px);
   line-height: 1.85;
   color: rgba(255,255,255,.94);
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
 }
 .kw-band {
   font-family: 'Cinzel', serif;
@@ -579,10 +578,9 @@ body::before {
   font-weight: 500; font-size: clamp(15.5px, 1.15vw, 17px); line-height: 1.75;
   color: rgba(255,255,255,.9);
   flex: 1;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 .mag-card .btn-readmore { align-self: flex-start; margin-top: 4px }
 
@@ -861,10 +859,9 @@ body::before {
   font-weight: 500; font-size: clamp(16px, 1.2vw, 17.5px);
   line-height: 1.8;
   color: rgba(255,255,255,.92);
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 
 /* ---------- 8b. Magazine-style biography blocks (About Us) ---------- */
@@ -1083,11 +1080,10 @@ body::before {
   font-size: clamp(15.5px, 1.15vw, 17px);
   line-height: 1.85;
   color: rgba(255,255,255,.92);
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
 }
 .bio-prose strong {
   color: rgba(255,255,255,.98);
@@ -1375,10 +1371,9 @@ body::before {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500; font-size: clamp(15.5px, 1.15vw, 16.5px); line-height: 1.8;
   color: rgba(255,255,255,.9); margin-bottom: 16px;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  text-align: left;
+  hyphens: manual;
+  -webkit-hyphens: manual;
 }
 .event .e-link {
   font-family: 'Cinzel', serif;

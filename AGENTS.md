@@ -303,6 +303,13 @@ Large videos should be:
 
 Raw Telegram exports belong only in staging folders.
 
+### ⛔ NEVER overwrite an original media file (hard rule — learned the hard way)
+
+- **Never compress/re-encode a media file in place, and never `mv -f`/overwrite the original.** Always write the optimized copy to a **new filename** (e.g. `name-web.mp4`) and keep the original untouched. An overwrite is unrecoverable — it does not go to the Recycle Bin, and originals >100 MB are never in git (they can't be committed), so there is **no way back**.
+- **Files >100 MB cannot be self-hosted** (GitHub hard limit → push rejected → Vercel can't serve). For any video that is large or long (≳1–2 min HD), **host it on YouTube/Vimeo and embed it** (lightweight click-to-play facade, like the JT Foxx block) — full quality, no size cap, fast adaptive streaming. Do **not** compress the user's original to force it under 100 MB unless they explicitly ask.
+- Before re-encoding ANY media: confirm a pristine original is preserved elsewhere first. If asked to "improve / fix / restore" a video, the source of truth is the **user's original file** — request it; do not try to "uncompress" a degraded copy.
+- *(History: the His Presence Fire 9:14 pulpit video was compressed in place, overwriting the 115 MB original — unrecoverable. Lesson recorded here.)*
+
 Production repositories should contain:
 
 * curated
@@ -432,6 +439,9 @@ Source material (magazine quotes, press coverage, certificates, captions) freque
 - ❌ "Shekinaih Siew Sin Yap" (mixed case) — forbidden
 - ❌ "j aaron k david" (lowercase) — forbidden
 - CSS already applies `text-transform: uppercase` via the `.name-gold` / `.name-silver` / `.name-inline-gold` / `.name-inline-silver` classes, but content authors should ALSO type the names in CAPS in source code so they read correctly without CSS (and for SEO).
+- ✅ **The ONLY lowercase exception** is non-display strings: the domain `shekinaihsiewsinyap-jaaronkdavid.com`, all URLs (`href`, `src`, `canonical`, `og:url`, `og:image`, `twitter:image`, JSON-LD `url`), and image/video **filenames** (e.g. `…-shekinaih-aaron-…​.jpg`). These are web addresses, **not** the name — never "correct" them to caps or links/images/SEO break.
+- **Capitalisation audit — run before every deploy:** strip HTML/CSS comments, then scan all pages for `shekinaih`/`aaron` (case-insensitive) that are NOT already all-caps; ignore any whose adjacent character is `- _ / .` (filename token) or that sit inside a URL. Every remaining hit that is not the domain is a violation to capitalise. *(Last full audit found a single visible slip — an Oman duo-caption `Shekinaih · On Stage Speaking` — now fixed to `SHEKINAIH SIEW SIN YAP · On Stage Speaking`.)*
+- **Colour audit (companion to caps):** in **visible rendered text**, the names must also be **gold (SHEKINAIH) / silver (J AARON)**, never plain white — wrap them in `name-inline-gold` / `name-inline-silver` (or the `gold` / `silver` plaque classes). Watch caption styles whose CSS `color` is white (`.photo-card-caption`, `.gallery-caption`, `.hero-poster-caption` use `rgba(255,255,255,.93)`): a name dropped into them renders white unless wrapped. *(Last audit wrapped 4 bare white-caption names — Dalai Lama ×2, Kolkata ×1, Manila ×1.)* Metadata/title/JSON-LD names are CAPS-only (no colour — plain text).
 
 ### Title / role rule
 

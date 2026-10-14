@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/egypt-2026.html", "destination": "/jt-foxx-mega-success-egypt-2026.html", "permanent": true },
+    { "source": "/egypt-2026", "destination": "/jt-foxx-mega-success-egypt-2026.html", "permanent": true },
+    { "source": "/italy-2026.html", "destination": "/italy-lamborghini-ferrari-museums-2026.html", "permanent": true },
+    { "source": "/italy-2026", "destination": "/italy-lamborghini-ferrari-museums-2026.html", "permanent": true },
+    { "source": "/dubai-2026.html", "destination": "/dubai-global-icon-awards-2026.html", "permanent": true },
+    { "source": "/dubai-2026", "destination": "/dubai-global-icon-awards-2026.html", "permanent": true }
+  ]
+}

@@ -30,6 +30,11 @@
     { id: 'ev-walk-for-peace', num: '·', label: 'Feb 2026 · Walk for Peace & Aloha · Kolkata' },
     { id: 'ev-sister-nivedita',num: '·', label: 'Feb 2026 · Sister Nivedita University · Kolkata' },
     { id: 'ev-oman',           num: '·', label: 'Feb 2026 · IISA 2026 · Muscat, Oman' },
+    { id: 'ev-italy', num: '·', label: 'Aug 2026 · Lamborghini & Maranello · Italy' },
+    { id: 'ev-dnb', num: '·', label: 'Sep 2026 · D&B Business Eminence Awards · Singapore' },
+    { id: 'ev-gwia', num: '·', label: 'Sep 2026 · Global Women of Influence Awards · Singapore' },
+    { id: 'ev-egypt', num: '·', label: 'Sep 2026 · JT Foxx’s Mega Success · Egypt' },
+    { id: 'ev-dubai', num: '·', label: 'Oct 2026 · Global Icons Awards · Dubai' },
     { id: 'awards',        num: '05', label: 'Awards & Recognition' },
     { id: 'connect',       num: '06', label: 'Connect' },
     { id: 'finale',        num: '07', label: 'The Closing Frame' }
