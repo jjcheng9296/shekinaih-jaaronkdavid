@@ -101,6 +101,7 @@
 </script>
 <style id="name-nowrap">.name-inline-gold,.name-inline-silver,.name-s,.name-a,.sf-gold,.sf-silver,.gold-name,.silver-name,.name-gold,.name-silver{white-space:nowrap}</style>
 <script id="name-fit">(function(){var Q=".name-inline-gold,.name-inline-silver,.name-s,.name-a,.sf-gold,.sf-silver,.gold-name,.silver-name,.name-gold,.name-silver";function box(e){var p=e.parentElement;while(p&&getComputedStyle(p).display.indexOf("inline")===0)p=p.parentElement;return p}function fit(){document.querySelectorAll(Q).forEach(function(e){e.style.removeProperty("font-size");e.style.removeProperty("letter-spacing");var b=box(e);if(!b)return;var cs=getComputedStyle(b);var room=b.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);room=Math.min(room,document.documentElement.clientWidth-32);if(!(room>0))return;var w=e.getBoundingClientRect().width;if(w<=room)return;var fs=parseFloat(getComputedStyle(e).fontSize);e.style.setProperty("font-size",Math.max(10,Math.floor(fs*room/w*0.97))+"px","important");if(e.getBoundingClientRect().width>room)e.style.setProperty("letter-spacing","0","important");w=e.getBoundingClientRect().width;if(w>room){fs=parseFloat(getComputedStyle(e).fontSize);e.style.setProperty("font-size",Math.max(8,Math.floor(fs*room/w*0.97))+"px","important")}})}if(document.readyState!=="loading")fit();else document.addEventListener("DOMContentLoaded",fit);addEventListener("load",fit);addEventListener("resize",fit);if(document.fonts)document.fonts.ready.then(fit)})();</script>
+<style id="mag-more-css">.mag-more{margin-top:40px}.mag-more-h{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,30px);font-weight:600;margin:0 0 14px}.mag-more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}@media(min-width:760px){.mag-more-grid{grid-template-columns:repeat(4,1fr)}}.mag-mini{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:inherit}.mag-mini img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:10px}.mag-mini-t{font-weight:600;color:var(--gold2,#e8b86d);font-size:15px}.mag-mini-d{font-size:13.5px;opacity:.75}</style>
 </head>
 <body>
 
@@ -268,7 +269,7 @@
 <section class="section alt" id="magazines" aria-labelledby="magazines-h">
   <div class="container">
     <div class="section-head fade-up">
-      <h2 id="magazines-h" class="display">Two International <span class="italic">Magazine Covers</span></h2>
+      <h2 id="magazines-h" class="display">International <span class="italic">Magazine Covers</span></h2>
     </div>
     <div class="mags">
       <article class="mag-card mag-card-responsive fade-up">
@@ -302,6 +303,19 @@
         </div>
       </article>
     </div>
+    <div class="mag-more">
+      <h3 class="mag-more-h">More Magazine Features</h3>
+      <div class="mag-more-grid">
+        <a class="mag-mini fade-up" href="magazine-insights-success-the-global-icon-2026.html"><img src="images/magazines/insights-success-global-icon-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="Insights Success, November 2026: cover"/><span class="mag-mini-t">Insights Success</span><span class="mag-mini-d">November 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-insights-success-most-influential-personality-2026.html"><img src="images/magazines/insights-success-most-influential-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="Insights Success, August 2026: cover"/><span class="mag-mini-t">Insights Success</span><span class="mag-mini-d">August 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-ciolook-2026.html"><img src="images/magazines/ciolook-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="CIOLook, September 2026: cover"/><span class="mag-mini-t">CIOLook</span><span class="mag-mini-d">September 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-aspire-navigators-2026.html"><img src="images/magazines/aspire-navigators-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="Aspire Navigators, September 2026: cover"/><span class="mag-mini-t">Aspire Navigators</span><span class="mag-mini-d">September 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-global-leaders-views-2026.html"><img src="images/magazines/global-leaders-views-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="Global Leaders Views, September 2026: cover"/><span class="mag-mini-t">Global Leaders Views</span><span class="mag-mini-d">September 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-world-business-insights-2026.html"><img src="images/magazines/world-business-insights-2026/p001-640.jpg" width="640" height="840" loading="lazy" alt="World Business Insights, September 2026: cover"/><span class="mag-mini-t">World Business Insights</span><span class="mag-mini-d">September 2026</span></a>
+        <a class="mag-mini fade-up" href="magazine-the-senora-2026.html"><img src="images/magazines/the-senora-2026/img01-640.jpg" width="640" height="319" loading="lazy" style="object-position:0 50%" alt="Señora, July 2026: cover"/><span class="mag-mini-t">Señora</span><span class="mag-mini-d">July 2026</span></a>
+      </div>
+    </div>
+
   </div>
 </section>
 
