@@ -102,6 +102,17 @@
 <style id="name-nowrap">.name-inline-gold,.name-inline-silver,.name-s,.name-a,.sf-gold,.sf-silver,.gold-name,.silver-name,.name-gold,.name-silver{white-space:nowrap}</style>
 <script id="name-fit">(function(){var Q=".name-inline-gold,.name-inline-silver,.name-s,.name-a,.sf-gold,.sf-silver,.gold-name,.silver-name,.name-gold,.name-silver";function box(e){var p=e.parentElement;while(p&&getComputedStyle(p).display.indexOf("inline")===0)p=p.parentElement;return p}function fit(){document.querySelectorAll(Q).forEach(function(e){e.style.removeProperty("font-size");e.style.removeProperty("letter-spacing");var b=box(e);if(!b)return;var cs=getComputedStyle(b);var room=b.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);room=Math.min(room,document.documentElement.clientWidth-32);if(!(room>0))return;var w=e.getBoundingClientRect().width;if(w<=room)return;var fs=parseFloat(getComputedStyle(e).fontSize);e.style.setProperty("font-size",Math.max(10,Math.floor(fs*room/w*0.97))+"px","important");if(e.getBoundingClientRect().width>room)e.style.setProperty("letter-spacing","0","important");w=e.getBoundingClientRect().width;if(w>room){fs=parseFloat(getComputedStyle(e).fontSize);e.style.setProperty("font-size",Math.max(8,Math.floor(fs*room/w*0.97))+"px","important")}})}if(document.readyState!=="loading")fit();else document.addEventListener("DOMContentLoaded",fit);addEventListener("load",fit);addEventListener("resize",fit);if(document.fonts)document.fonts.ready.then(fit)})();</script>
 <style id="mag-more-css">.mag-more{margin-top:40px}.mag-more-h{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,30px);font-weight:600;margin:0 0 14px}.mag-more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}@media(min-width:760px){.mag-more-grid{grid-template-columns:repeat(4,1fr)}}.mag-mini{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:inherit}.mag-mini img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:10px}.mag-mini-t{font-weight:600;color:var(--gold2,#e8b86d);font-size:15px}.mag-mini-d{font-size:13.5px;opacity:.75}</style>
+<style id="home-contact-css">.home-contact{padding-top:clamp(40px,7vw,90px);padding-bottom:clamp(40px,7vw,90px)}
+.hc-card{display:grid;grid-template-columns:1fr;gap:26px;align-items:center;padding:clamp(24px,4.5vw,52px);border:1px solid rgba(232,184,109,.45);border-radius:24px;background:linear-gradient(150deg,rgba(232,184,109,.11),rgba(232,184,109,.02) 55%,rgba(255,255,255,.02));box-shadow:0 20px 60px rgba(0,0,0,.35)}
+@media(min-width:900px){.hc-card{grid-template-columns:1.1fr 1fr;gap:48px}}
+.hc-text .display{margin:6px 0 12px;font-size:clamp(40px,5vw,64px);line-height:1.05}.hc-text .lede{font-size:clamp(17px,1.5vw,20px)}.hc-text .lede{margin:0;max-width:52ch}
+.hc-mail{display:block;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(22px,3.4vw,36px);line-height:1.2;color:#fff;text-decoration:none;word-break:break-word}
+.hc-mail:hover,.hc-mail:focus-visible{color:#F0C660}
+.hc-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.hc-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid rgba(232,184,109,.65);color:#F0C660}
+.hc-btn.primary{background:linear-gradient(135deg,#f0c660,#c9973f);color:#16120a;border-color:transparent}
+.hc-btn:hover,.hc-btn:focus-visible{filter:brightness(1.08)}
+.chapter-fab.at-foot{opacity:0;pointer-events:none}.chapter-fab{transition:opacity .25s}</style>
 </head>
 <body>
 
@@ -146,7 +157,7 @@
     <li><a href="#awards">Recognition</a></li>
     <li><a href="#magazines">Magazines</a></li>
     <li><a href="events.html#thumbs">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="mm" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -1310,6 +1321,28 @@
 </section>
 
 <!-- ═════════════════════════════════════════════════════════════
+     CONTACT BAND
+     ═════════════════════════════════════════════════════════════ -->
+<section class="section home-contact" id="contact" aria-labelledby="contact-h">
+  <div class="container">
+    <div class="hc-card fade-up">
+      <div class="hc-text">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-h" class="display">Write to <span class="italic">Us</span></h2>
+        <p class="lede">Speaking invitations, media and interviews, partnerships and general messages. Every message is read by the team at Crowned Eagles Global.</p>
+      </div>
+      <div class="hc-act">
+        <a class="hc-mail" href="mailto:ceg@crownedeaglesglobal.org">ceg@crownedeaglesglobal.org</a>
+        <div class="hc-btns">
+          <a class="hc-btn primary" href="mailto:ceg@crownedeaglesglobal.org">Write an email <span aria-hidden="true">→</span></a>
+          <a class="hc-btn" href="contact.html">Contact page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════════
      FOOTER
      ═════════════════════════════════════════════════════════════ -->
 <footer class="footer">
@@ -1321,7 +1354,7 @@
     <p class="footer-tag">
       <em>Transforming Lives · Connecting Nations · Inspiring Global Impact</em>
     </p>
-    <p class="footer-meta"><a href="contact.html" style="color:#F0C660">Contact Us</a> · <a href="mailto:ceg@crownedeaglesglobal.org" style="color:inherit">ceg@crownedeaglesglobal.org</a></p>
+    <p class="footer-meta" style="margin-bottom:10px"><a href="contact.html" style="color:#F0C660">Contact Us</a> · <a href="mailto:ceg@crownedeaglesglobal.org" style="color:inherit">ceg@crownedeaglesglobal.org</a></p>
     <p class="footer-meta">© 2026 <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> &amp; <span class="name-inline-silver">J AARON K DAVID</span> · Singapore</p>
   </div>
 </footer>
@@ -1329,5 +1362,6 @@
 <!-- Scripts -->
 <script src="js/main.js?v=20260653" defer></script>
 
+<script>(function(){var f=document.querySelector('footer.footer'),b=document.querySelector('.chapter-fab');if(!f||!b||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){b.classList.toggle('at-foot',e[0].isIntersecting)},{threshold:0.05}).observe(f)})();</script>
 </body>
 </html>
