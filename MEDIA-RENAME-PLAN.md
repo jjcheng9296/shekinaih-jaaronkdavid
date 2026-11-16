@@ -20,16 +20,16 @@ Organisers: I.I.I Group · Gulf Skill Pioneers · BCI
 |---|---|
 | `oman/photo_2026-02-10_04-12-45.jpg` | `oman-2026-iisa-shekinaih-delegate-event-poster.jpg` |
 | `oman/photo_2026-02-10_04-13-04.jpg` | `oman-2026-iisa-aaron-delegate-event-poster.jpg` |
-| `oman/photo_2026-03-01_23-55-59.jpg` | `oman-2026-iisa-event-signage-oman-ballroom-2.jpg` |
-| `oman/photo_2026-03-29_08-08-41.jpg` | `oman-2026-iisa-shekinaih-receiving-award-plaque-on-stage.jpg` |
+| `oman/oman-iisa-2026-oman-ballroom-screen.jpg` | `oman-2026-iisa-event-signage-oman-ballroom-2.jpg` |
+| `oman/oman-iisa-2026-shekinaih-receiving-award-on-stage-01.jpg` | `oman-2026-iisa-shekinaih-receiving-award-plaque-on-stage.jpg` |
 | `oman/photo_2026-05-25_08-23-35.jpg` | `oman-2026-iisa-award-plaque-close-up.jpg` |
-| `oman/photo_2026-05-25_08-23-35 (2).jpg` | `oman-2026-iisa-gold-trophy-close-up.jpg` |
-| `oman/photo_2026-05-25_09-09-07.jpg` | `oman-2026-iisa-shekinaih-aaron-on-stage-with-delegate-holding-awards.jpg` |
-| `oman/photo_2026-05-25_09-42-54.jpg` | `oman-2026-iisa-shekinaih-aaron-seated-at-gala-ballroom.jpg` |
+| `oman/oman-iisa-2026-iisa-bci-trophy.jpg` | `oman-2026-iisa-gold-trophy-close-up.jpg` |
+| `oman/oman-iisa-2026-shekinaih-aaron-holding-awards-bci-backdrop.jpg` | `oman-2026-iisa-shekinaih-aaron-on-stage-with-delegate-holding-awards.jpg` |
+| `oman/oman-iisa-2026-shekinaih-aaron-seated-at-summit-table.jpg` | `oman-2026-iisa-shekinaih-aaron-seated-at-gala-ballroom.jpg` |
 | `oman/photo_2026-05-27_09-58-36.jpg` | `oman-2026-iisa-shekinaih-receiving-plaque-wide-stage.jpg` |
-| `oman/photo_2026-05-27_09-59-25.jpg` | `oman-2026-iisa-shekinaih-speaking-on-stage-with-delegates.jpg` |
+| `oman/oman-iisa-2026-shekinaih-speaking-on-stage-02.jpg` | `oman-2026-iisa-shekinaih-speaking-on-stage-with-delegates.jpg` |
 | `oman/photo_2026-05-27_09-59-46.jpg` | `oman-2026-iisa-aaron-speaking-on-stage-international-panel.jpg` |
-| `oman/photo_2026-05-27_10-00-08.jpg` | `oman-2026-iisa-aaron-shekinaih-with-young-flag-bearer-at-gala.jpg` |
+| `oman/oman-iisa-2026-shekinaih-aaron-with-guests-seated.jpg` | `oman-2026-iisa-aaron-shekinaih-with-young-flag-bearer-at-gala.jpg` |
 | `oman/photo_2026-05-27_10-00-32.jpg` | `oman-2026-iisa-aaron-speaking-on-stage-with-delegate-panel-wide.jpg` |
 | `oman/video_2026-05-27_11-27-32.mp4` | `oman-2026-iisa-event-video-01.mp4` |
 | `oman/video_2026-05-27_11-27-43.mp4` | `oman-2026-iisa-event-video-02.mp4` |
@@ -57,8 +57,8 @@ Event: **DMGP Global Diplomacy Awards** — Lakeside Marriott Hotel, Powai, Mumb
 |---|---|
 | `mumbai-bollywood/photo_2026-01-28_18-31-42.jpg` | `mumbai-bollywood-2026-shekinaih-press-conference-with-dmgp-certificate-and-medal.jpg` |
 | `mumbai-bollywood/photo_2026-01-28_18-32-27.jpg` | `mumbai-bollywood-2026-aaron-press-conference-with-dmgp-certificate-and-medal.jpg` |
-| `mumbai-bollywood/photo_2026-01-28_18-35-31.jpg` | `mumbai-bollywood-2026-dmgp-four-awardees-group-with-certificates.jpg` |
-| `mumbai-bollywood/photo_2026-03-12_16-53-59.jpg` | `mumbai-bollywood-2026-niche-magazine-dmgp-coverage-article.jpg` |
+| `mumbai-bollywood/mumbai-2026-shekinaih-aaron-dmgp-award-certificates-group.jpg` | `mumbai-bollywood-2026-dmgp-four-awardees-group-with-certificates.jpg` |
+| `mumbai-bollywood/mumbai-2026-dmgp-global-diplomacy-awards-press-clipping.jpg` | `mumbai-bollywood-2026-niche-magazine-dmgp-coverage-article.jpg` |
 | `mumbai-bollywood/photo_2026-05-25_10-03-16.jpg` | `mumbai-bollywood-2026-aaron-shekinaih-with-bollywood-host-and-guest-hotel-lobby.jpg` |
 | `mumbai-bollywood/photo_2026-05-25_10-03-16 (2).jpg` | `mumbai-bollywood-2026-shekinaih-selfie-with-female-guest.jpg` |
 | `mumbai-bollywood/video_2026-05-26_12-32-51.mp4` | `mumbai-bollywood-2026-shekinaih-aaron-event-video-02.mp4` |
@@ -69,8 +69,8 @@ Event: **DMGP Global Diplomacy Awards** — Lakeside Marriott Hotel, Powai, Mumb
 
 | Current | → Proposed |
 |---|---|
-| `nagpur-kolkata-2026/photo_2026-05-25_10-06-59.jpg` | `nagpur-kolkata-2026-kolkata-shekinaih-with-buddhist-monk-and-dignitaries-sister-nivedita-university.jpg` |
-| `nagpur-kolkata-2026/photo_2026-05-25_10-06-59 (2).jpg` | `nagpur-kolkata-2026-kolkata-shekinaih-aaron-delegation-with-monk-sister-nivedita-university-wide.jpg` |
+| `nagpur-kolkata-2026/kolkata-2026-shekinaih-aaron-with-monks-and-guests.jpg` | `nagpur-kolkata-2026-kolkata-shekinaih-with-buddhist-monk-and-dignitaries-sister-nivedita-university.jpg` |
+| `nagpur-kolkata-2026/kolkata-2026-sister-nivedita-university-delegation-group.jpg` | `nagpur-kolkata-2026-kolkata-shekinaih-aaron-delegation-with-monk-sister-nivedita-university-wide.jpg` |
 | `nagpur-kolkata-2026/video_2026-05-27_11-31-33.mp4` | `nagpur-kolkata-2026-event-video-01.mp4` |
 | `nagpur-kolkata-2026/video_2026-05-27_11-32-17.mp4` | `nagpur-kolkata-2026-event-video-02.mp4` |
 | `nagpur-kolkata-2026/video_2026-05-27_11-32-52.mp4` | `nagpur-kolkata-2026-event-video-03.mp4` |
@@ -86,7 +86,7 @@ Event: **DMGP Global Diplomacy Awards** — Lakeside Marriott Hotel, Powai, Mumb
 
 | Current | → Proposed |
 |---|---|
-| `manila-up-2025/photo_2025-11-22_22-05-01.jpg` | `manila-up-2025-aaron-shekinaih-with-lisa-lew-and-gala-hosts-group-photo.jpg` |
+| `manila-up-2025/manila-up-2025-shekinaih-aaron-with-guests-evening-group-01.jpg` | `manila-up-2025-aaron-shekinaih-with-lisa-lew-and-gala-hosts-group-photo.jpg` |
 
 ---
 
@@ -95,17 +95,17 @@ Event: **DMGP Global Diplomacy Awards** — Lakeside Marriott Hotel, Powai, Mumb
 ### Rename + Move to proper folder:
 | Current | → Proposed (with new folder) |
 |---|---|
-| `imported/photo_2026-05-25_18-52-08.jpg` | `unpkfc-2024/unpkfc-2024-aaron-shekinaih-receiving-certificates-with-aphinita.jpg` *(NEW)* |
-| `imported/Aaron_Shekinaih_Group_Photo_Social_Event.jpeg` | `manila-up-2025/manila-up-2025-aaron-shekinaih-with-lisa-lew-and-hosts-evening-gathering.jpeg` |
-| `imported/fire_ministries.jpg` | `his-presence-fire-cathedral-2025/his-presence-fire-2025-shekinaih-aaron-with-pastor-sikaala-cathedral-portrait.jpg` |
-| `imported/manila up award.jpg` | `manila-up-2025/manila-up-2025-aaron-shekinaih-with-trophies-formal-portrait.jpg` |
+| `imported/unpkfc-2025-shekinaih-aaron-certificates-of-honor-02.jpg` | `unpkfc-2024/unpkfc-2024-aaron-shekinaih-receiving-certificates-with-aphinita.jpg` *(NEW)* |
+| `imported/manila-up-2025-shekinaih-aaron-with-guests-evening-group-02.jpg` | `manila-up-2025/manila-up-2025-aaron-shekinaih-with-lisa-lew-and-hosts-evening-gathering.jpeg` |
+| `imported/his-presence-fire-2025-shekinaih-aaron-dr-gershom-sikaala-02.jpg` | `his-presence-fire-cathedral-2025/his-presence-fire-2025-shekinaih-aaron-with-pastor-sikaala-cathedral-portrait.jpg` |
+| `imported/manila-up-2025-shekinaih-aaron-holding-awards-02.jpg` | `manila-up-2025/manila-up-2025-aaron-shekinaih-with-trophies-formal-portrait.jpg` |
 
 ### Duplicates of existing files (recommend **delete**, not rename):
 | File | Duplicate of |
 |---|---|
-| `imported/photo_2025-11-21_14-31-20.jpg` | `la-hollywood-2025/Aaron_Shekinaih_Hollywood_Red_Carpet_Interview_01.jpg` *(the head-cropped one)* |
-| `imported/photo_2025-11-21_14-31-21.jpg` | `la-hollywood-2025/Aaron_Shekinaih_Hollywood_Red_Carpet_Interview_02.jpg` |
-| `imported/qr_img_1.jpg` | Same as already-deployed `images/qr-codes/` content (4 QR codes for breakthrough / Heaven Broadcast / Billionaire Destiny) — verify and decide |
+| `imported/hollywood-2025-shekinaih-aaron-red-carpet-interview-03.jpg` | `la-hollywood-2025/hollywood-2025-shekinaih-aaron-red-carpet-interview-01.jpg` *(the head-cropped one)* |
+| `imported/hollywood-2025-shekinaih-aaron-red-carpet-interview-04.jpg` | `la-hollywood-2025/hollywood-2025-shekinaih-aaron-red-carpet-interview-02.jpg` |
+| `imported/qr-codes-connect-banner-02.jpg` | Same as already-deployed `images/qr-codes/` content (4 QR codes for breakthrough / Heaven Broadcast / Billionaire Destiny) — verify and decide |
 
 ---
 
@@ -115,11 +115,11 @@ Every file in this folder is the same Oman IISA event. Some are duplicates of fi
 
 | File | Analysis | Action |
 |---|---|---|
-| `imported/2026-03-29/photo_2026-03-29_08-08-39.jpg` | Aaron receiving award — slight angle variation of `oman/photo_2026-05-27_09-58-36.jpg` | **Keep, move to `oman/`** as `oman-2026-iisa-aaron-receiving-award-on-stage.jpg` |
-| `imported/2026-03-29/photo_2026-03-29_08-08-40.jpg` | Shekinaih speaking on stage — same scene as `oman/photo_2026-05-27_09-59-25.jpg`, different frame | **Likely duplicate, suggest delete** |
-| `imported/2026-03-29/photo_2026-03-29_08-08-40 (2).jpg` | Same scene, tighter crop | **Likely duplicate, suggest delete** |
-| `imported/2026-03-29/photo_2026-03-29_08-08-40 (3).jpg` | Aaron speaking on stage with award plaque — alternate of `oman/photo_2026-05-27_10-00-32.jpg` | **Keep, move to `oman/`** as `oman-2026-iisa-aaron-speaking-on-stage-with-plaque-medium-shot.jpg` |
-| `imported/2026-03-29/photo_2026-03-29_08-08-41.jpg` | Identical to `oman/photo_2026-03-29_08-08-41.jpg` | **Duplicate, DELETE** |
+| `imported/2026-03-29/oman-iisa-2026-award-presentation-on-stage-group.jpg` | Aaron receiving award — slight angle variation of `oman/photo_2026-05-27_09-58-36.jpg` | **Keep, move to `oman/`** as `oman-2026-iisa-aaron-receiving-award-on-stage.jpg` |
+| `imported/2026-03-29/oman-iisa-2026-shekinaih-speaking-on-stage-04.jpg` | Shekinaih speaking on stage — same scene as `oman/oman-iisa-2026-shekinaih-speaking-on-stage-02.jpg`, different frame | **Likely duplicate, suggest delete** |
+| `imported/2026-03-29/oman-iisa-2026-shekinaih-speaking-on-stage-03.jpg` | Same scene, tighter crop | **Likely duplicate, suggest delete** |
+| `imported/2026-03-29/oman-iisa-2026-aaron-speaking-on-stage.jpg` | Aaron speaking on stage with award plaque — alternate of `oman/photo_2026-05-27_10-00-32.jpg` | **Keep, move to `oman/`** as `oman-2026-iisa-aaron-speaking-on-stage-with-plaque-medium-shot.jpg` |
+| `imported/2026-03-29/oman-iisa-2026-shekinaih-receiving-award-on-stage-02.jpg` | Identical to `oman/oman-iisa-2026-shekinaih-receiving-award-on-stage-01.jpg` | **Duplicate, DELETE** |
 
 ➡️ **Then delete the `images/imported/2026-03-29/` folder** entirely.
 
@@ -129,8 +129,8 @@ Every file in this folder is the same Oman IISA event. Some are duplicates of fi
 
 | File | Duplicate of | Action |
 |---|---|---|
-| `imported/2026-05-24/photo_2026-05-24_20-23-04.jpg` | `oman/photo_2026-02-10_04-12-45.jpg` (Shekinaih IISA delegate poster) | **DELETE** |
-| `imported/2026-05-24/photo_2026-05-24_20-23-08.jpg` | `oman/photo_2026-02-10_04-13-04.jpg` (Aaron IISA delegate poster) | **DELETE** |
+| `imported/2026-05-24/oman-iisa-2026-shekinaih-delegate-poster.jpg` | `oman/photo_2026-02-10_04-12-45.jpg` (Shekinaih IISA delegate poster) | **DELETE** |
+| `imported/2026-05-24/oman-iisa-2026-aaron-delegate-poster.jpg` | `oman/photo_2026-02-10_04-13-04.jpg` (Aaron IISA delegate poster) | **DELETE** |
 
 ➡️ **Then delete the `images/imported/2026-05-24/` folder** entirely.
 
