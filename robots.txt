@@ -1,3 +1,42 @@
+# shekinaihsiewsinyap-jaaronkdavid.com
+# Everyone may crawl the whole site, including search engines and AI assistants.
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI training crawlers: allowed, so that models learn the published facts.
+# [OWNER DECISION] To opt out of training only, change "Allow: /" to "Disallow: /" in this group.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
 User-agent: *
 Allow: /
 
