@@ -711,6 +711,27 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
  ]
 }
 </script>
+<style id="mag-reader-css">
+.mr-start{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:13px 24px;border-radius:999px;border:0;font:600 16px/1 inherit;font-family:inherit;color:#16120a;background:linear-gradient(135deg,#f0c660,#c9973f);cursor:pointer}
+.ed-gallery.pages .ed-figure{position:relative;cursor:zoom-in}
+.ed-gallery.pages .ed-figure figcaption{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:6px}
+.ed-gallery.pages .ed-figure img{border-radius:8px;box-shadow:0 6px 22px rgba(0,0,0,.45)}
+@media(max-width:700px){.ed-gallery.pages{grid-template-columns:1fr!important;gap:22px!important;padding-left:14px!important;padding-right:14px!important}}
+.mr{position:fixed;inset:0;z-index:99999;background:#07070b;display:none;flex-direction:column}
+.mr.on{display:flex}
+.mr-top,.mr-bot{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;background:#111118;color:#fff}
+.mr-top{padding-top:max(10px,env(safe-area-inset-top))}
+.mr-bot{padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.mr-count{font:600 15px/1.2 inherit;letter-spacing:.04em}
+.mr-b{min-width:48px;height:48px;padding:0 16px;border-radius:999px;border:1px solid rgba(232,184,109,.6);background:transparent;color:#f0c660;font:600 16px/1 inherit;font-family:inherit;cursor:pointer}
+.mr-b[disabled]{opacity:.35}
+.mr-b.p{background:linear-gradient(135deg,#f0c660,#c9973f);color:#16120a;border-color:transparent}
+.mr-view{flex:1 1 auto;overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y pinch-zoom;display:flex}
+.mr-view img{display:block;margin:auto;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.mr.z .mr-view{display:block}
+.mr.z .mr-view img{max-width:none;max-height:none;width:220%;margin:0}
+@media(min-width:900px){.mr.z .mr-view img{width:150%}}
+</style>
 </head>
 <body>
 
@@ -751,7 +772,8 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
 <section class="ed-section ed-body" id="pages" aria-labelledby="h-pages">
   <p class="ed-eyebrow">The pages</p>
   <h2 class="ed-h2" id="h-pages">In the Magazine</h2>
-  <p>The cover, the editorial note, the contents and the pages of the cover story. Tap a page to open it full size.</p>
+  <p>The cover, the editorial note, the contents and the pages of the cover story. Tap any page to open the reader, then swipe or use the arrows to turn the pages.</p>
+  <button type="button" class="mr-start">Read the magazine <span aria-hidden="true">→</span></button>
 </section>
 <div class="ed-gallery pages">
 <figure class="ed-figure ">
@@ -1027,5 +1049,24 @@ body{padding-bottom:96px}
 </div>
 <script>document.addEventListener("keydown",function(e){if(e.key==="Escape"){var p=document.getElementById("cxPanel");if(p)p.classList.remove("cx-open");}});</script>
 <!-- /cx-nav -->
+<script id="mag-reader-js">(function(){
+var figs=[].slice.call(document.querySelectorAll('.ed-gallery.pages .ed-figure'));if(!figs.length)return;
+var pages=figs.map(function(f){var a=f.querySelector('a.ed-zoom'),b=f.querySelector('[data-lb-src]'),c=f.querySelector('figcaption');return{src:(a&&a.getAttribute('href'))||(b&&b.getAttribute('data-lb-src')),label:(c&&c.textContent.trim())||''}});
+var el=document.createElement('div');el.className='mr';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','Magazine reader');
+el.innerHTML='<div class="mr-top"><span class="mr-count" aria-live="polite"></span><span><button type="button" class="mr-b" data-a="z" aria-label="Zoom in or out">Zoom</button> <button type="button" class="mr-b" data-a="x" aria-label="Close the reader">Close</button></span></div><div class="mr-view"><img alt=""/></div><div class="mr-bot"><button type="button" class="mr-b" data-a="p">&#8592; Previous</button><button type="button" class="mr-b p" data-a="n">Next &#8594;</button></div>';
+document.body.appendChild(el);
+var img=el.querySelector('img'),view=el.querySelector('.mr-view'),cnt=el.querySelector('.mr-count'),bp=el.querySelector('[data-a=p]'),bn=el.querySelector('[data-a=n]'),bz=el.querySelector('[data-a=z]'),i=0,open=false;
+function show(k){i=Math.max(0,Math.min(pages.length-1,k));el.classList.remove('z');bz.textContent='Zoom';img.src=pages[i].src;img.alt=pages[i].label||('Page '+(i+1));cnt.textContent=(i+1)+' of '+pages.length;bp.disabled=i===0;bn.disabled=i===pages.length-1;view.scrollTop=0;view.scrollLeft=0;if(pages[i+1]){new Image().src=pages[i+1].src}}
+function openAt(k){show(k);if(!open){open=true;el.classList.add('on');document.documentElement.style.overflow='hidden';try{history.pushState({mr:1},'')}catch(e){}}}
+function close(fromPop){if(!open)return;open=false;el.classList.remove('on');document.documentElement.style.overflow='';if(!fromPop){try{history.back()}catch(e){}}var f=figs[i];if(f&&f.scrollIntoView)f.scrollIntoView({block:'center'})}
+window.addEventListener('popstate',function(){close(true)});
+figs.forEach(function(f,k){f.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();openAt(k)},true)});
+el.addEventListener('click',function(e){var a=e.target.getAttribute&&e.target.getAttribute('data-a');if(a==='x')close();else if(a==='p')show(i-1);else if(a==='n')show(i+1);else if(a==='z'){var z=el.classList.toggle('z');bz.textContent=z?'Fit':'Zoom'}});
+img.addEventListener('dblclick',function(){bz.click()});
+document.addEventListener('keydown',function(e){if(!open)return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')show(i+1);else if(e.key==='ArrowLeft')show(i-1)});
+var sx=0,sy=0,t1=false;view.addEventListener('touchstart',function(e){t1=e.touches.length===1;if(t1){sx=e.touches[0].clientX;sy=e.touches[0].clientY}},{passive:true});
+view.addEventListener('touchend',function(e){if(!t1||el.classList.contains('z'))return;if(window.visualViewport&&window.visualViewport.scale>1.05)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>60&&Math.abs(dx)>2*Math.abs(dy))show(i+(dx<0?1:-1))},{passive:true});
+var s=document.querySelector('.mr-start');if(s)s.addEventListener('click',function(){openAt(0)});
+})();</script>
 </body>
 </html>
