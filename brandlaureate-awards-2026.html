@@ -671,6 +671,126 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
 .ed-note-s{font-size:14px;color:rgba(255,255,255,.78);margin-top:10px}
 @media(max-width:600px){.ed-facts{margin-left:20px;margin-right:20px}}
 </style>
+<style id="page-coverage-report">
+/* Chapter 17 - BrandLaureate media coverage section (all 125 publications).
+   Scoped: every selector starts with .blc. Uses the page's fonts (Cinzel, Cormorant Garamond, DM Sans)
+   and the shared .ed-eyebrow / .ed-h2 heading classes. Mobile first; left-aligned text throughout. */
+.blc{--blc-gold:#E8B86D;--blc-gold-hi:#F0C660;--blc-gold-deep:#C8923A;--blc-dark:#0b0d20;
+  --blc-line:rgba(232,184,109,.26);--blc-rule:rgba(255,255,255,.09);--blc-muted:rgba(255,255,255,.76);
+  max-width:780px;margin:0 auto;padding:46px clamp(16px,5vw,40px) 0;color:#fff;text-align:left;scroll-margin-top:72px}
+.blc *,.blc *::before,.blc *::after{box-sizing:border-box}
+.blc-lead{margin:0;font-size:17px;line-height:1.72;font-weight:500;color:rgba(255,255,255,.94);hyphens:manual}
+.blc-h3{margin:36px 0 2px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(23px,3.4vw,28px);line-height:1.2;color:#fff}
+.blc-sub{margin:0;font-size:14.5px;line-height:1.55;font-weight:500;color:var(--blc-muted)}
+.blc-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* Coverage at a glance: four figures. Phones: the audience figure on its own row, then three. */
+.blc-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:"aud aud aud" "pub reg sec";gap:8px;margin:14px 0 0}
+.blc-stat{display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:6px;min-width:0;padding:14px 12px;border:1px solid var(--blc-line);border-radius:14px;
+  background:linear-gradient(160deg,rgba(232,184,109,.10),rgba(255,255,255,.015) 70%)}
+.blc-stat:nth-child(1){grid-area:pub}.blc-stat:nth-child(2){grid-area:reg}.blc-stat:nth-child(3){grid-area:aud}.blc-stat:nth-child(4){grid-area:sec}
+.blc-stat dd{margin:0;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(34px,9vw,46px);line-height:1;color:var(--blc-gold-hi);
+  font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.01em;overflow-wrap:anywhere}
+.blc-stat dt{font-size:12.5px;line-height:1.38;font-weight:600;color:var(--blc-muted)}
+.blc-src{margin:12px 0 0;font-size:13.5px;line-height:1.6;font-weight:500;color:rgba(255,255,255,.72)}
+.blc-src cite{font-style:italic}
+
+/* Largest audiences: each card one link */
+.blc-cards{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.blc-cards li{margin:0;min-width:0}
+.blc-card{position:relative;display:flex;flex-direction:column;gap:6px;height:100%;min-height:112px;padding:14px;border:1px solid var(--blc-line);
+  border-radius:14px;background:rgba(255,255,255,.03);color:#fff;text-decoration:none;transition:background-color .15s,border-color .15s}
+.blc-card:hover{background:rgba(232,184,109,.11);border-color:rgba(232,184,109,.6)}
+.blc-card::after,.blc-list a::after{content:"\2197";content:"\2197"/"";position:absolute;color:var(--blc-gold);font-size:15px;line-height:1}
+.blc-card::after{top:14px;right:12px}
+.blc-card-o{padding-right:18px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:19px;line-height:1.15;overflow-wrap:anywhere}
+.blc-card-r{font-family:'Cinzel',serif;font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--blc-gold)}
+.blc-card-v{margin-top:auto;font-size:12.5px;line-height:1.3;font-weight:500;color:var(--blc-muted)}
+.blc-card-v b{display:block;font-size:16px;font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+
+/* Search and region filter (shown by section.js; hidden without JavaScript) */
+.blc-tools[hidden]{display:none}
+.blc-tools{display:grid;gap:12px;margin:16px 0 8px}
+.blc-label{display:block;margin:0 0 6px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.86)}
+.blc-search input{display:block;width:100%;min-height:48px;margin:0;padding:10px 14px 10px 44px;border:1px solid rgba(232,184,109,.45);border-radius:12px;
+  background:rgba(255,255,255,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8B86D' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.6-3.6'/%3E%3C/svg%3E") no-repeat 14px 50%/18px 18px;
+  color:#fff;font:500 16px/1.3 'DM Sans',sans-serif;-webkit-appearance:none;appearance:none}
+.blc-search input::placeholder{color:rgba(255,255,255,.58)}
+.blc-search input:focus{border-color:var(--blc-gold);background-color:rgba(255,255,255,.07)}
+.blc-search input::-webkit-search-decoration{-webkit-appearance:none}
+.blc-search input::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;width:24px;height:24px;margin:0 -4px 0 8px;cursor:pointer;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8B86D' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") no-repeat 50% 50%/16px 16px}
+.blc-chips{min-width:0;margin:0;padding:0;border:0}
+.blc-chips legend{float:left;width:100%;margin:0 0 6px;padding:0;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.86)}
+.blc-chip-row{clear:both;display:flex;gap:8px;overflow-x:auto;margin:0 -4px;padding:4px 4px 6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}
+.blc-chip-row::-webkit-scrollbar{display:none}
+/* Phones: a spacer after the last chip, wider than the edge fade, so the last chip ends in full view */
+.blc-chip-row::after{content:"";flex:none;width:36px}
+.blc-chip{position:relative;flex:none;scroll-snap-align:start}
+.blc-chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.blc-chip span{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:1px solid rgba(232,184,109,.45);border-radius:999px;background:rgba(232,184,109,.06);
+  font-family:'Cinzel',serif;font-size:10.5px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--blc-gold);white-space:nowrap;transition:background-color .15s}
+.blc-chip span b{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:0;color:rgba(255,255,255,.82)}
+.blc-chip input:hover+span{background:rgba(232,184,109,.16);color:#fff}
+.blc-chip input:checked+span{background:linear-gradient(135deg,var(--blc-gold-hi),var(--blc-gold-deep));border-color:transparent;color:var(--blc-dark)}
+.blc-chip input:checked+span b{color:var(--blc-dark)}
+.blc-chip input:focus-visible+span{outline:2px solid #fff;outline-offset:2px}
+.blc-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 14px}
+.blc-status{margin:0;font-size:14.5px;line-height:1.5;font-weight:500;color:rgba(255,255,255,.88)}
+.blc-toggle{min-height:44px;padding:8px 16px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:none;color:#fff;font:600 13.5px/1.2 'DM Sans',sans-serif;cursor:pointer}
+.blc-toggle:hover{background:rgba(255,255,255,.07)}
+/* Keep the rounded shapes when the page's focus ring (a/button/summary:focus-visible{border-radius:3px}) applies */
+.blc-card:focus-visible,.blc-region>summary:focus-visible{border-radius:14px}
+.blc-list a:focus-visible{border-radius:10px}
+.blc-toggle:focus-visible{border-radius:999px}
+
+/* Region panels (native details/summary: open and close without JavaScript) */
+.blc-regions{display:grid;gap:8px;margin:8px 0 0}
+.blc-region{border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(255,255,255,.02);scroll-margin-top:72px}
+.blc-region[open]{border-color:rgba(232,184,109,.38);background:linear-gradient(172deg,rgba(232,184,109,.07),rgba(255,255,255,.015) 45%)}
+.blc-region>summary{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name sign" "meta sign";align-items:center;gap:3px 12px;
+  min-height:58px;padding:12px 14px 12px 16px;border-radius:14px;list-style:none;cursor:pointer}
+.blc-region>summary::-webkit-details-marker{display:none}
+.blc-region>summary::after{grid-area:sign;content:"+";display:grid;place-items:center;width:30px;height:30px;border:1px solid rgba(232,184,109,.45);border-radius:50%;
+  font-size:20px;line-height:1;color:var(--blc-gold)}
+.blc-region[open]>summary::after{content:"\2212"}
+.blc-region>summary:hover .blc-rn{color:var(--blc-gold-hi)}
+.blc-rn{grid-area:name;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:21px;line-height:1.2;color:#fff}
+.blc-rm{grid-area:meta;font-size:13px;line-height:1.45;font-weight:500;color:var(--blc-muted)}
+.blc-rm b{font-weight:700;color:var(--blc-gold)}
+.blc-list{list-style:none;margin:0;padding:0 8px 8px}
+.blc-list li{margin:0;padding:0;border-top:1px solid var(--blc-rule)}
+.blc-list li:first-child{border-top-color:rgba(232,184,109,.22)}
+.blc-list a{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:2px;min-height:52px;padding:10px 36px 10px 8px;border-radius:10px;color:#fff;text-decoration:none}
+.blc-list a:hover{background:rgba(232,184,109,.09)}
+.blc-list a::after{top:50%;right:10px;margin-top:-7px;font-size:14px}
+.blc-o{font-size:16px;line-height:1.35;font-weight:600;overflow-wrap:anywhere}
+.blc-list a:hover .blc-o{color:var(--blc-gold-hi)}
+.blc-m{display:flex;flex-wrap:wrap;gap:0 14px;font-size:13px;line-height:1.45;font-weight:500;color:var(--blc-muted)}
+.blc-i{white-space:nowrap}
+.blc-v{font-variant-numeric:tabular-nums;white-space:nowrap;color:rgba(240,198,96,.92)}
+.blc-region:focus-within{border-color:rgba(232,184,109,.5)}
+
+@media(min-width:720px){
+  .blc-stats{grid-template-columns:1fr 1fr 1.9fr 1fr;grid-template-areas:"pub reg aud sec";gap:12px}
+  .blc-stat{padding:18px 16px}
+  .blc-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .blc-chip-row{flex-wrap:wrap;overflow:visible;margin:0;padding:0;-webkit-mask-image:none;mask-image:none}
+  .blc-chip-row::after{display:none}
+  .blc-tools{grid-template-columns:minmax(0,1fr)}
+  .blc-region>summary{grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"name meta sign";padding:12px 16px 12px 20px}
+  .blc-list{padding:0 12px 10px}
+  .blc-list a{grid-template-columns:minmax(0,1fr) 168px 142px;align-items:center;gap:14px;padding:10px 40px 10px 10px}
+  .blc-m{display:contents}
+  .blc-i{white-space:normal}
+}
+@media(max-width:600px){.blc{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){.blc-card,.blc-chip span{transition:none}}
+@media print{.blc-tools{display:none}.blc-region{break-inside:avoid}}
+/* phones: larger small labels (17 Nov 2026 mobile review) */
+@media(max-width:719px){.blc-card-r{font-size:12px;letter-spacing:1px}.blc-chip span{font-size:12.5px}.blc-chip span b{font-size:12.5px}}
+</style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -920,7 +1040,7 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
     <div><dt><span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span></dt><dd>The BrandLaureate Brand ICON Leadership Award 2026 · <strong>Corporate Icon</strong>: Transformational Leadership &amp; Purpose</dd></div>
   </dl>
 </aside>
-<nav class="ed-chips" aria-label="On this page"><a class="ed-chip" href="#her-award">Her award</a><a class="ed-chip" href="#his-award">His award</a><a class="ed-chip primary" href="#the-film">Watch the film · 4:12</a><a class="ed-chip" href="#interview">The interview · 20:03</a><a class="ed-chip" href="#programme">The programme</a><a class="ed-chip" href="#arrival">The night</a><a class="ed-chip" href="#guests">With the hosts and guests</a><a class="ed-chip" href="#coverage">In the news</a><a class="ed-chip" href="#gallery">Gallery</a></nav>
+<nav class="ed-chips" aria-label="On this page"><a class="ed-chip" href="#her-award">Her award</a><a class="ed-chip" href="#his-award">His award</a><a class="ed-chip primary" href="#the-film">Watch the film · 4:12</a><a class="ed-chip" href="#interview">The interview · 20:03</a><a class="ed-chip" href="#programme">The programme</a><a class="ed-chip" href="#arrival">The night</a><a class="ed-chip" href="#guests">With the hosts and guests</a><a class="ed-chip" href="#coverage">In the news</a><a class="ed-chip" href="#coverage-report">125 publications</a><a class="ed-chip" href="#gallery">Gallery</a></nav>
 <section class="ed-section ed-body" id="her-award" aria-labelledby="h-her-award">
   <p class="ed-eyebrow">Her award</p>
   <h2 class="ed-h2" id="h-her-award">Visionary Brand ICON</h2>
@@ -1388,23 +1508,440 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
   <h2 class="ed-h2" id="h-coverage">Carried Across Asia</h2>
   <p>The World Brands Foundation announced the 2026 recipients on 23 October in a release on <a href="https://www.prnewswire.com/apac/news-releases/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac-302918149.html" rel="noopener" target="_blank">PR Newswire APAC</a>, carried the same day by <a href="https://finance.yahoo.com/small-business/articles/world-brands-foundation-twbf-celebrates-133800896.html" rel="noopener" target="_blank">Yahoo Finance</a>. The release names <span class="name-inline-gold">DR.&nbsp;SHEKINAIH SIEW SIN YAP</span>, Founder &amp; Managing Partner, and <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span>, Co-founder &amp; Partner, of CE Global Network International Pte Ltd among the recipients of The BrandLaureate Brand ICON Leadership Award 2026, honoured for “their visionary leadership, outstanding contributions and enduring influence in their respective fields.”</p>
   <p>The release sets out the history of the awards: The World Brands Foundation launched The BrandLaureate BestBrands Awards in 2006, and over 3,000 brands and more than 500 international brand personalities have since been honoured through The BrandLaureate. It records a special segment featuring TVBI, TVB’s international business platform, and names Alain Robert, the French Spider-Man, among the year’s International Brand Personalities. The BrandLaureate shared the news on <a href="https://www.facebook.com/thebrandlaureate/posts/pfbid0538iQThez5ifHLiLC8tf268QNXNXKPPrsS2sF3WFn7YHBGU8oZsk4r3ES4msmH4wl" rel="noopener" target="_blank">Facebook</a>.</p>
-
-  <ul class="ed-outlets">
-    <li><a href="https://www.prnewswire.com/apac/news-releases/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac-302918149.html" rel="noopener" target="_blank">PR Newswire APAC</a><span>Global</span></li>
-    <li><a href="https://finance.yahoo.com/small-business/articles/world-brands-foundation-twbf-celebrates-133800896.html" rel="noopener" target="_blank">Yahoo Finance</a><span>Global</span></li>
-    <li><a href="https://www.kosmo.com.my/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" rel="noopener" target="_blank">Kosmo!</a><span>Malaysia</span></li>
-    <li><a href="https://www.utusan.com.my/pr-newswire-en/2026/10/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" rel="noopener" target="_blank">Utusan Malaysia</a><span>Malaysia</span></li>
-    <li><a href="https://themalaysianreserve.com/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" rel="noopener" target="_blank">The Malaysian Reserve</a><span>Malaysia</span></li>
-    <li><a href="https://www.manilatimes.net/2026/10/23/tmt-newswire/pr-newswire/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/2452913" rel="noopener" target="_blank">The Manila Times</a><span>Philippines</span></li>
-    <li><a href="https://www.bastillepost.com/global/article/6284705-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" rel="noopener" target="_blank">Bastille Post Global</a><span>Hong Kong</span></li>
-    <li><a href="https://macaubusiness.com/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" rel="noopener" target="_blank">Macau Business</a><span>Macao</span></li>
-    <li><a href="https://www.tradingkey.com/news/stocks/262236275-pr-newswire" rel="noopener" target="_blank">Tradingkey</a><span>Hong Kong</span></li>
-    <li><a href="https://digiconasia.net/pr-newswire/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" rel="noopener" target="_blank">DigiconAsia</a><span>Singapore</span></li>
-    <li><a href="https://vulcanpost.com/prnewswire/?rkey=20261023AE79787&amp;filter=28460" rel="noopener" target="_blank">Vulcan Post</a><span>Singapore</span></li>
-    <li><a href="https://www.thailand-business-news.com/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" rel="noopener" target="_blank">Thailand Business News</a><span>Thailand</span></li>
-  </ul>
-  <p class="ed-note-s">The organiser's media report lists 138 placements of the release across 18 countries and territories.</p>
 </section>
+<section class="blc" id="coverage-report" aria-labelledby="blc-h">
+  <div class="blc-head">
+    <p class="ed-eyebrow">Media coverage report</p>
+    <h2 class="ed-h2" id="blc-h">The Release in 125 Publications</h2>
+    <p class="blc-lead">The release appeared in 125 online publications across 18 regions. Each one is listed below, and every name opens the original post in a new tab.</p>
+  </div>
+  <h3 class="blc-h3" id="blc-glance-h">Coverage at a Glance</h3>
+  <p class="blc-sub">Key figures from the online publication record</p>
+  <dl class="blc-stats">
+    <div class="blc-stat"><dt>Online publications archived</dt><dd>125</dd></div>
+    <div class="blc-stat"><dt>Regions covered</dt><dd>18</dd></div>
+    <div class="blc-stat"><dt>Combined potential audience (visitors per month)</dt><dd>83,049,733</dd></div>
+    <div class="blc-stat"><dt>Industry sectors</dt><dd>13</dd></div>
+  </dl>
+  <p class="blc-src">From the organiser’s <cite>Media Coverage Report</cite>, The BrandLaureate BestBrands Awards 2026, November 2026.</p>
+  <h3 class="blc-h3" id="blc-feat-h">Largest Audiences</h3>
+  <p class="blc-sub">The eight publications with the most visitors per month</p>
+  <ul class="blc-cards" role="list" aria-labelledby="blc-feat-h">
+    <li><a class="blc-card" href="https://finance.yahoo.com/small-business/articles/world-brands-foundation-twbf-celebrates-133800896.html" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">Yahoo! Finance</span><span class="blc-sr">, </span><span class="blc-card-r">Global</span><span class="blc-sr">, </span><span class="blc-card-v"><b>43,030,588</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://store.scmp.com/pages/news?rkey=20261023AE79787&amp;filter=28425" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">The Store by SCMP</span><span class="blc-sr">, </span><span class="blc-card-r">Hong Kong</span><span class="blc-sr">, </span><span class="blc-card-v"><b>11,250,000</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://www.kosmo.com.my/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">Kosmo!</span><span class="blc-sr">, </span><span class="blc-card-r">Malaysia</span><span class="blc-sr">, </span><span class="blc-card-v"><b>8,100,000</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://www.bastillepost.com/global/article/6284705-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">Bastille Post Global</span><span class="blc-sr">, </span><span class="blc-card-r">Hong Kong</span><span class="blc-sr">, </span><span class="blc-card-v"><b>5,100,000</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://www.prnewswire.com/apac/news-releases/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac-302918149.html" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">PR Newswire</span><span class="blc-sr">, </span><span class="blc-card-r">Global</span><span class="blc-sr">, </span><span class="blc-card-v"><b>3,159,555</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://en.huvle.com/news/view.do?guid=20261023223800283353" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">huvle English</span><span class="blc-sr">, </span><span class="blc-card-r">United States</span><span class="blc-sr">, </span><span class="blc-card-v"><b>3,000,000</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://www.utusan.com.my/pr-newswire-en/2026/10/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">Utusan Malaysia</span><span class="blc-sr">, </span><span class="blc-card-r">Malaysia</span><span class="blc-sr">, </span><span class="blc-card-v"><b>2,600,000</b> visitors per month</span></a></li>
+    <li><a class="blc-card" href="https://www.manilatimes.net/2026/10/23/tmt-newswire/pr-newswire/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/2452913" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-card-o">The Manila Times</span><span class="blc-sr">, </span><span class="blc-card-r">Philippines</span><span class="blc-sr">, </span><span class="blc-card-v"><b>1,300,000</b> visitors per month</span></a></li>
+  </ul>
+  <h3 class="blc-h3" id="blc-all-h">All 125 Publications by Region</h3>
+  <p class="blc-sub">Open a region to see its publications, each with its industry and visitors per month.</p>
+  <div class="blc-tools" hidden>
+    <div class="blc-search" role="search">
+      <label class="blc-label" for="blc-q">Search publications</label>
+      <input id="blc-q" type="search" placeholder="Outlet, region or industry" autocomplete="off" spellcheck="false" aria-describedby="blc-status">
+    </div>
+    <fieldset class="blc-chips"><legend>Region</legend><div class="blc-chip-row"></div></fieldset>
+    <div class="blc-bar"><p class="blc-status" id="blc-status" role="status" aria-live="polite" aria-atomic="true"></p><button type="button" class="blc-toggle">Open all regions</button></div>
+  </div>
+  <div class="blc-regions">
+    <details class="blc-region" id="blc-r-global" open>
+      <summary><span class="blc-rn">Global</span><span class="blc-sr">, </span><span class="blc-rm"><b>5</b> publications <span aria-hidden="true">·</span> 46,275,967 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://finance.yahoo.com/small-business/articles/world-brands-foundation-twbf-celebrates-133800896.html" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Yahoo! Finance</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">43,030,588 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.prnewswire.com/apac/news-releases/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac-302918149.html" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">PR Newswire</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">3,159,555 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.centralcharts.com/en/news/5824849-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">CentralCharts</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">63,694 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://whatson.guide/onwire/?rkey=20261023AE79787&amp;filter=23903" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">WhatsOn</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">20,104 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://digitalconqurer.com/prnewswire/technology/?rkey=20261023AE79787&amp;filter=3833" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Digital Conqurer</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">2,026 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-malaysia">
+      <summary><span class="blc-rn">Malaysia</span><span class="blc-sr">, </span><span class="blc-rm"><b>38</b> publications <span aria-hidden="true">·</span> 11,721,310 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://www.kosmo.com.my/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Kosmo!</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">8,100,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.utusan.com.my/pr-newswire-en/2026/10/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Utusan Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">2,600,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://themalaysianreserve.com/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Malaysian Reserve</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">335,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://megapowertech-malaysia.blogspot.com/p/pr-newswire.html?rkey=20261023AE79787&amp;filter=7658" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Tech Today Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">242,230 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.woah.my/prnewswire/en?rkey=20261023AE79787&amp;filter=10709" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Woah! Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">71,700 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://mystarjob.com/articles/prnewswire/?rkey=20261023AE79787&amp;filter=3206" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">My Star Job</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">59,730 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.sarawaktribune.com/pr-newswire/?rkey=20261023AE79787&amp;filter=28678" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Sarawak Tribune</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">49,582 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://top10malaysia.com/main/pr-newswire/?rkey=20261023AE79787&amp;filter=15386" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Top 10 of Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">28,980 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://tavesper.tech/pr-newswire/?rkey=20261023AE79787&amp;filter=8389&amp;The%20World%20Brands%20Foundation%20(TWBF)%20Celebrates%20Brand%20Excellence%20at%20The%20BrandLaureate%20Awards%202026%20and%20Introduces%20The%20BrandLaureate%20Accreditation%20Council%20(TBAC)" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Adventures of Vesper</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">28,920 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.tekkaus.com/p/prnewswire.html?rkey=20261023AE79787&amp;filter=14344" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Tekkaus</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">27,720 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://sme.asia/prnewswire/?rkey=20261023AE79787&amp;filter=5503" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">SME Magazine</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">26,100 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://ck5354.blogspot.com/p/pr-news-wire.html?rkey=20261023AE79787&amp;filter=7336" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">KLSE Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">23,070 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.top10asia.org/main/pr-newswire/?rkey=20261023AE79787&amp;filter=15390" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Top 10 of Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">21,330 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://moneycompass.com.my/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">moneycompass.com.my</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">19,590 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.myeverydaytech.com/prnewswire/?rkey=20261023AE79787&amp;filter=18689" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">My Everyday Tech</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">12,840 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://gadgetmtech.com/prnewswire/?rkey=20261023AE79787&amp;filter=18101" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">GadgetMTech</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">11,130 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://vcnewsnetwork.com/prnewswire/?rkey=20261023AE79787&amp;filter=10424" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">VC News Network</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">8,670 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://borneonews.net/pr-newswire/?rkey=20261023AE79787&amp;filter=16233" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">BorneoNews.Net</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">6,810 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.mykayaplus.com/news/?rkey=20261023AE79787&amp;filter=25497" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Kaya Plus</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">6,630 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.coffeebreakwithme.com/p/pr-newswire.html?rkey=20261023AE79787&amp;filter=25995" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">coffeebreakwithme</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">5,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.dikbee.com/p/pr-newswire-en.html?rkey=20261023AE79787&amp;filter=28051" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">My Lovely Bee</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">4,600 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.thechiefofficer.com/rss/news?rkey=20261023AE79787&amp;filter=19774" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Chief Officer</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">3,810 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://luminnej.blogspot.com/p/prnewswire.html?rkey=20261023AE79787&amp;filter=9140" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Luminnej</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">3,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.cdam.biz/pr-newswire/?rkey=20261023AE79787&amp;filter=19096" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Capital Dynamics Asset Management</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">2,800 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.niagatimes.com/prnewswire/en/?rkey=20261023AE79787&amp;filter=15437" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Niaga Times</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">2,520 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://aseanfoodtravel.com/prnewswire/?rkey=20261023AE79787&amp;filter=19726" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Asean Food Travel</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://cxp.asia/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">CXP - Customer Experience Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://hrhub.my/prnewswire?rkey=20261023AE79787&amp;filter=22547" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">HR Hub</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://motoring-malaysia.blogspot.com/p/prnewswire.html?rkey=20261023AE79787&amp;filter=12598" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Motoring-Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Transportation/Logistics</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://placesmy.com/news/pr-newswire/?rkey=20261023AE79787&amp;filter=21609" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Places Malaysia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://themalaysiavoice.com/prnewswire/?rkey=20261023AE79787&amp;filter=22824" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Malaysia Voice</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.tomorrowsleaders.biz/prnewswire/?rkey=20261023AE79787&amp;filter=9395" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">tomorrowsleaders.biz</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://klktoday.com/pr-newswire-en/?rkey=20261023AE79787&amp;filter=28649" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">KLK Today</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,800 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://paparazzi.com.my/newthemepaparazzi/pr-newswire/?rkey=20261023AE79787&amp;filter=28708" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Paparazzi</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">827 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.temasekpost.com/category/pr-newswire?rkey=20261023AE79787&amp;filter=28394" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Temasek Post</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">822 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://mdaily.my/pr-newswire-en/?rkey=20261023AE79787&amp;filter=28732" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">MDaily</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">753 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://123mamanet.com/pr-newswire-en/?rkey=20261023AE79787&amp;filter=28379" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">123mamanet</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">677 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.max-infos.com/pr-newswire-english/?rkey=20261023AE79787&amp;filter=28099" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Max Info</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">669 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-singapore">
+      <summary><span class="blc-rn">Singapore</span><span class="blc-sr">, </span><span class="blc-rm"><b>16</b> publications <span aria-hidden="true">·</span> 1,037,838 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://vulcanpost.com/prnewswire/?rkey=20261023AE79787&amp;filter=28460&amp;The%20World%20Brands%20Foundation%20(TWBF)%20Celebrates%20Brand%20Excellence%20at%20The%20BrandLaureate%20Awards%202026%20and%20Introduces%20The%20BrandLaureate%20Accreditation%20Council%20(TBAC)" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Vulcan Post</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">547,350 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.asiabiztoday.com/newsfeed/?rkey=20261023AE79787&amp;filter=20213" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Asia Biz Today</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">143,880 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://financialhorse.com/fh-property-series/latest-news?rkey=20261023AE79787&amp;filter=27640" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Financial Horse</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">122,300 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://thefinance.sg/pr-newswire/?rkey=20261023AE79787&amp;filter=19895" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Finance SG</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">66,900 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://digiconasia.net/pr-newswire/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">DigiconAsia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">30,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://weekender.com.sg/pr-newswire-asia/?rkey=20261023AE79787&amp;filter=24804" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Weekender</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">25,980 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://thewellnessinsider.asia/prnewswire/?preview=true&amp;rkey=20261023AE79787&amp;filter=10625" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Wellness Insider</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Medical/Healthcare</span><span class="blc-sr">, </span><span class="blc-v">23,340 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://coinpasar.sg/newsfeed/?rkey=20261023AE79787&amp;filter=26803" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">CoinPasar</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Cryptocurrency</span><span class="blc-sr">, </span><span class="blc-v">21,700 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://darrenbloggie.com/latest-news/?rkey=20261023AE79787&amp;filter=22926" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Darren Bloggie</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">13,140 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://rolfsuey.com/home/pr-newswire/?rkey=20261023AE79787&amp;filter=20783" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Rolf Suey</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">11,220 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://ireviewuread.com/news?rkey=20261023AE79787&amp;filter=23936" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">I Review U Read</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">9,210 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.janiqueel.com/prnewswire/?rkey=20261023AE79787&amp;filter=22803" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Janiqueel</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">8,580 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.re-thinkwealth.com/industry-news-pr-newswire/?rkey=20261023AE79787&amp;filter=22771" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Re-Think Wealth</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">7,200 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://worksmartasia.blogspot.com/p/blog-page_22.html?rkey=20261023AE79787&amp;filter=12084" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">WorkSmart Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">5,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.hpility.sg/news/?rkey=20261023AE79787&amp;filter=21063" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Hpility SG</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">1,372 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.newgravite.com/news/?rkey=20261023AE79787&amp;filter=19627" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">New Gravite</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">666 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-thailand">
+      <summary><span class="blc-rn">Thailand</span><span class="blc-sr">, </span><span class="blc-rm"><b>13</b> publications <span aria-hidden="true">·</span> 184,083 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://pannaphat.me/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Pannaphat Me</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">79,204 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://digitalmore.co/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Digitalmore</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">41,253 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.thailand-business-news.com/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Thailand Business News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">24,600 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.chiangraitimes.com/pr-news/?rkey=20261023AE79787&amp;filter=28524&amp;The%20World%20Brands%20Foundation%20(TWBF)%20Celebrates%20Brand%20Excellence%20at%20The%20BrandLaureate%20Awards%202026%20and%20Introduces%20The%20BrandLaureate%20Accreditation%20Council%20(TBAC)" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Chiang Rai Times - CTN News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">13,100 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://bangkokstyle.online/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Bangkok Style</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Retail &amp; Consumer</span><span class="blc-sr">, </span><span class="blc-v">8,500 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://mobiledista.com/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Mobile Dista</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">5,600 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.prnews.in.th/prnewswire/en/all/view/74385" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">prnews.in.th</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">5,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.thailandbusinessdirectory.net/press-release/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Thailand Business Directory</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,900 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.thaielitebeauty.com/prnewswire/en/all/view/74385" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Elite Beauty</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,600 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.siamnewsnetwork.net/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Siam News Network</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,300 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.thailandchina.net/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Thailand China Business News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.siamnews.net/pr-news/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Siam News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">758 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.newswire.in.th/prnewswire/en/all/view/74385" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Thailand Newswire</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">268 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-hong-kong">
+      <summary><span class="blc-rn">Hong Kong</span><span class="blc-sr">, </span><span class="blc-rm"><b>11</b> publications <span aria-hidden="true">·</span> 17,686,451 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://store.scmp.com/pages/news?rkey=20261023AE79787&amp;filter=28425" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Store by SCMP</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">11,250,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.bastillepost.com/global/article/6284705-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Bastille Post Global</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">5,100,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.tradingkey.com/news/stocks/262236275-pr-newswire" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Tradingkey</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">1,160,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.quamnet.com/post/zVljek1BhmMeA2rKa5Gsk" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Quamnet</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">98,310 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://digfingroup.com/company-news/?rkey=20261023AE79787&amp;filter=26200" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">DigFin</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">39,900 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.88iv.com/en/n.html?id=102135658587357315&amp;cat=prnasia" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">88iv</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">13,560 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://hkbusinesswire.com/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">HK Businesswire</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">10,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.wisdomir.com/en/media_detail.php?id=27901" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Wisdom IR</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">5,453 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.capitaldynamics.hk/en_US/pr-newswire/?rkey=20261023AE79787&amp;filter=19086" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Capital Dynamics Hong Kong</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">5,040 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://ecjobsonline.com/news/c/14891/The%20World%20Brands%20Foundation%20(TWBF)%20Celebrates%20Brand%20Excellence%20at%20The%20BrandLaureate%20Awards%202026%20and%20Introduces%20The%20BrandLaureate%20Accreditation%20Council%20(TBAC)/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">ECjobsonline</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">2,188 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.watchgod.com/en/blog/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Watch God</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Retail &amp; Consumer</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-philippines">
+      <summary><span class="blc-rn">Philippines</span><span class="blc-sr">, </span><span class="blc-rm"><b>10</b> publications <span aria-hidden="true">·</span> 1,401,360 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://www.manilatimes.net/2026/10/23/tmt-newswire/pr-newswire/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/2452913" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Manila Times</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">1,300,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://pinoytechsaga.blogspot.com/p/latest-tech-news.html?rkey=20261023AE79787&amp;filter=10106" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">PinoyTechSaga</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">31,461 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.pinoybisnes.com/prnewswire/?rkey=20261023AE79787&amp;filter=20215" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Pinoy Bisnes Ideas</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">27,840 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://walastech.com/prnewswire/?rkey=20261023AE79787&amp;filter=20912" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">WalasTech</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">10,200 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://ourdailynewsonline.com/prnewswire/?rkey=20261023AE79787&amp;filter=3951" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Our Daily News Online</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">9,360 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://thepopblogph.com/pr-newswire/?rkey=20261023AE79787&amp;filter=23941" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Pop Blog</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Entertainment</span><span class="blc-sr">, </span><span class="blc-v">9,210 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.urbantechnoobs.com/newswire?rkey=20261023AE79787&amp;filter=20390" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">UrbanTechNoobs</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">7,200 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://onetechavenue.com/newswire/?rkey=20261023AE79787&amp;filter=10155" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Onetechavenue</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">3,360 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://blog.ademagnaye.com/prnewswire/?rkey=20261023AE79787&amp;filter=20505" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Noisy Noisy Man!</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Environment</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.aseangazette.com/newswires/pr-newswire/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/128026/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">ASEAN Gazette</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">729 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-vietnam">
+      <summary><span class="blc-rn">Vietnam</span><span class="blc-sr">, </span><span class="blc-rm"><b>8</b> publications <span aria-hidden="true">·</span> 226,660 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://www.brandinginasia.com/latest-from-pr-news/?rkey=20261023AE79787&amp;filter=19104" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Branding in Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">101,730 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.techsignin.com/pr-newswire/?rkey=20261023AE79787&amp;filter=15812" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">TechSign.in</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">68,550 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://trangcongnghe.com/news/pr-newswire/125860-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac.html" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Trang Cong Nghe</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">21,090 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://news.movetoasia.com/?rkey=20261023AE79787&amp;filter=21817" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Move to Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">13,710 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.vietmis.com/pr-newswire-en.html?rkey=20261023AE79787&amp;filter=21405" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">VietMis</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">8,670 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://thegbm.com/pr-newswire/?rkey=20261023AE79787&amp;filter=24500" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Global Business Magazine</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">7,740 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://vietnam-business-consulting.com/pr-newswire/?rkey=20261023AE79787&amp;filter=21296" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Vietnam Business Consulting</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Other</span><span class="blc-sr">, </span><span class="blc-v">3,240 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.emakase.co/pr-news-wire?rkey=20261023AE79787&amp;filter=25783" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Emakase</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">1,930 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-indonesia">
+      <summary><span class="blc-rn">Indonesia</span><span class="blc-sr">, </span><span class="blc-rm"><b>5</b> publications <span aria-hidden="true">·</span> 87,476 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://emitentrust.com/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Emiten Trust</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">50,992 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://zonautara.com/news-release/?rkey=20261023AE79787&amp;filter=19124" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Zona Utara</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">27,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://broadcastmagz.com/pr-newswire-english/?rkey=20261023AE79787&amp;filter=18821" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Broadcastmagz</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">6,330 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.panajournal.com/pr-newswire-feeds/?rkey=20261023AE79787&amp;filter=2570" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">PanaJournal</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">2,700 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://balipicturenews.com/pr-newswire?rkey=20261023AE79787&amp;filter=28167" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Bali Picture News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">454 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-cambodia">
+      <summary><span class="blc-rn">Cambodia</span><span class="blc-sr">, </span><span class="blc-rm"><b>3</b> publications <span aria-hidden="true">·</span> 70,020 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://www.construction-property.com/prnewswire/?rkey=20261023AE79787&amp;filter=12065" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Construction &amp; Property</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Other</span><span class="blc-sr">, </span><span class="blc-v">33,720 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://cambodiainvestmentreview.com/pr-newswire/?rkey=20261023AE79787&amp;filter=27080" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Cambodia Investment Review</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">19,500 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://b2b-asianews.com/pr-newswire/38541/detail/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">B2B Asia News</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">16,800 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-republic-of-korea">
+      <summary><span class="blc-rn">Republic of Korea</span><span class="blc-sr">, </span><span class="blc-rm"><b>3</b> publications <span aria-hidden="true">·</span> 940,920 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://nnews.korea.com/prnewswire/global/?rkey=20261023AE79787&amp;filter=28462&amp;The%20World%20Brands%20Foundation%20(TWBF)%20Celebrates%20Brand%20Excellence%20at%20The%20BrandLaureate%20Awards%202026%20and%20Introduces%20The%20BrandLaureate%20Accreditation%20Council%20(TBAC)" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Korea.com</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">850,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://www.hapskorea.com/pr-newswire/?rkey=20261023AE79787&amp;filter=23880" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Haps Magazine Korea</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Travel &amp; Leisure</span><span class="blc-sr">, </span><span class="blc-v">85,920 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://us.acrofan.com/detail.php?number=1023777" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">ACROFAN</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">5,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-australia">
+      <summary><span class="blc-rn">Australia</span><span class="blc-sr">, </span><span class="blc-rm"><b>2</b> publications <span aria-hidden="true">·</span> 97,320 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://www.stateofdigitalpublishing.com/pr-newswire/?rkey=20261023AE79787&amp;filter=24953" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">State of Digital Publishing</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">86,280 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://thebulletin.net.au/news/press-releases?rkey=20261023AE79787&amp;filter=24765" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Bulletin</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">11,040 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-india">
+      <summary><span class="blc-rn">India</span><span class="blc-sr">, </span><span class="blc-rm"><b>2</b> publications <span aria-hidden="true">·</span> 12,270 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://bankingfrontiers.com/pr-newswire/?rkey=20261023AE79787&amp;filter=3021" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Banking Frontiers</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">8,695 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://en.sangritimes.com/prnewswire?rkey=20261023AE79787&amp;filter=21009" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Sangri Times</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">3,575 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-japan">
+      <summary><span class="blc-rn">Japan</span><span class="blc-sr">, </span><span class="blc-rm"><b>2</b> publications <span aria-hidden="true">·</span> 41,539 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://praze.jp/press/pr-newswire/en/5079787-ae79787-0/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">PRaze</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">31,539 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://coindest.com/news/80363/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">coindest</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">10,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-macao">
+      <summary><span class="blc-rn">Macao</span><span class="blc-sr">, </span><span class="blc-rm"><b>2</b> publications <span aria-hidden="true">·</span> 225,680 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://macaubusiness.com/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Macau Business Media</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">223,680 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://businessintelligence.mo/2026/10/23/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac/" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Business Intelligence</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">2,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-united-states">
+      <summary><span class="blc-rn">United States</span><span class="blc-sr">, </span><span class="blc-rm"><b>2</b> publications <span aria-hidden="true">·</span> 3,009,526 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://en.huvle.com/news/view.do?guid=20261023223800283353" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">huvle English</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">General</span><span class="blc-sr">, </span><span class="blc-v">3,000,000 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+        <li><a href="https://signal8.ai/press-releases/pr-newswire/302918149-the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">signal8</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Financial</span><span class="blc-sr">, </span><span class="blc-v">9,526 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-bangladesh">
+      <summary><span class="blc-rn">Bangladesh</span><span class="blc-sr">, </span><span class="blc-rm"><b>1</b> publication <span aria-hidden="true">·</span> 11,220 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://thetechmusk.com/pr-by-prnewswire/?rkey=20261023AE79787&amp;filter=27604" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">The Tech Musk</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Tech</span><span class="blc-sr">, </span><span class="blc-v">11,220 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-mainland-china">
+      <summary><span class="blc-rn">Mainland China</span><span class="blc-sr">, </span><span class="blc-rm"><b>1</b> publication <span aria-hidden="true">·</span> 12,205 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://en.prnasia.com/releases/apac/the-world-brands-foundation-twbf-celebrates-brand-excellence-at-the-brandlaureate-awards-2026-and-introduces-the-brandlaureate-accreditation-council-tbac--553060.shtml" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">PR Newswire Asia</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Media &amp; Information</span><span class="blc-sr">, </span><span class="blc-v">12,205 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+    <details class="blc-region" id="blc-r-united-kingdom">
+      <summary><span class="blc-rn">United Kingdom</span><span class="blc-sr">, </span><span class="blc-rm"><b>1</b> publication <span aria-hidden="true">·</span> 7,888 visitors per month</span></summary>
+      <ol class="blc-list" role="list">
+        <li><a href="https://businesschief.asia/pr_newswire?rkey=20261023AE79787&amp;filter=22718" target="_blank" rel="noopener" aria-describedby="blc-nt"><span class="blc-o">Business Chief APAC</span><span class="blc-sr">, </span><span class="blc-m"><span class="blc-i">Business Services</span><span class="blc-sr">, </span><span class="blc-v">7,888 <span class="blc-sr">visitors </span>per month</span></span></a></li>
+      </ol>
+    </details>
+  </div>
+  <p id="blc-nt" hidden>Opens in a new tab</p>
+</section>
+<script id="blc-js">
+/* Chapter 17 - BrandLaureate media coverage: search box, region chips, live match count and "open all".
+   No libraries. Without JavaScript every region panel still opens and every link still works.
+   Kept ASCII-only (non-ASCII characters are written as \u escapes). */
+(function () {
+  'use strict';
+
+  function init() {
+    var root = document.getElementById('coverage-report');
+    if (!root || root.getAttribute('data-blc-ready')) return;
+    var tools = root.querySelector('.blc-tools'),
+        input = root.querySelector('#blc-q'),
+        row = root.querySelector('.blc-chip-row'),
+        status = root.querySelector('#blc-status'),
+        toggle = root.querySelector('.blc-toggle'),
+        panels = Array.prototype.slice.call(root.querySelectorAll('.blc-region'));
+    if (!tools || !input || !row || !status || !toggle || !panels.length) return;
+    root.setAttribute('data-blc-ready', '1');
+
+    var fold = function (s) {
+      s = String(s).toLowerCase();
+      return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
+    };
+    var plural = function (n) { return n === 1 ? ' publication' : ' publications'; };
+
+    var total = 0;
+    var data = panels.map(function (p) {
+      var name = p.querySelector('.blc-rn').textContent.trim();
+      var items = Array.prototype.slice.call(p.querySelectorAll('.blc-list > li')).map(function (li) {
+        var a = li.querySelector('a');
+        return { li: li, text: fold(li.textContent + ' ' + name + ' ' + (a ? a.hostname : '')) };
+      });
+      total += items.length;
+      return { el: p, name: name, items: items, n: items.length, count: p.querySelector('.blc-rm b') };
+    });
+
+    /* Region chips: native radio buttons, so arrow keys move between them and there is one tab stop */
+    var addChip = function (value, label, n, checked) {
+      var l = document.createElement('label'), i = document.createElement('input'),
+          s = document.createElement('span'), b = document.createElement('b');
+      l.className = 'blc-chip';
+      i.type = 'radio'; i.name = 'blc-region'; i.value = value; i.checked = !!checked;
+      i.setAttribute('aria-label', label + ', ' + n + plural(n));
+      b.textContent = n;
+      s.appendChild(document.createTextNode(label + ' '));
+      s.appendChild(b);
+      l.appendChild(i); l.appendChild(s);
+      row.appendChild(l);
+      return i;
+    };
+    /* Regions with fewer than MIN_CHIP publications share one "Other regions" chip, so the chips stay short */
+    var MIN_CHIP = 5, small = data.filter(function (d) { return d.n < MIN_CHIP; });
+    if (small.length < 2) small = [];
+    small.forEach(function (d) { d.small = true; });
+    var smallN = small.reduce(function (s, d) { return s + d.n; }, 0);
+    var allChip = addChip('all', 'All', total, true);
+    data.forEach(function (d) { if (!d.small) addChip(d.el.id, d.name, d.n, false); });
+    if (small.length) {
+      /* The visible label stays the chip's name; the regions it covers are its description */
+      var other = addChip('other', 'Other regions', smallN, false),
+          desc = document.createElement('span');
+      desc.id = 'blc-other-desc';
+      desc.hidden = true;
+      desc.textContent = small.map(function (d) { return d.name; }).join(', ');
+      row.parentNode.appendChild(desc);
+      other.setAttribute('aria-describedby', desc.id);
+    }
+
+    var region = 'all', saved = null, timer = 0;
+
+    function visiblePanels() { return data.filter(function (d) { return !d.el.hidden; }); }
+
+    function updateToggle() {
+      var vis = visiblePanels();
+      var allOpen = vis.length > 0 && vis.every(function (d) { return d.el.open; });
+      toggle.textContent = allOpen ? 'Close all regions' : 'Open all regions';
+      toggle.hidden = vis.length === 0;
+    }
+
+    function apply() {
+      var raw = input.value.trim(), q = fold(raw),
+          terms = q ? q.split(/\s+/) : [], shown = 0, scope = 0, where = '',
+          filtered = !!q || region !== 'all';
+      /* Remember which panels were open before any search or chip filter, and restore them once both are cleared */
+      if (filtered && !saved) saved = data.map(function (d) { return d.el.open; });
+
+      data.forEach(function (d) {
+        var inRegion = region === 'all' || d.el.id === region || (region === 'other' && d.small), m = 0;
+        d.items.forEach(function (it) {
+          var ok = terms.every(function (t) { return it.text.indexOf(t) !== -1; });
+          it.li.hidden = !ok;
+          if (ok) m++;
+        });
+        if (inRegion) {
+          scope += d.n;
+          if (region === 'other') where = ' in ' + small.length + ' other regions';
+          else if (region !== 'all') where = ' in ' + d.name;
+        }
+        d.el.hidden = !(inRegion && m > 0);
+        if (!d.el.hidden) shown += m;
+        if (d.count) d.count.textContent = q ? m + ' of ' + d.n : d.n;
+        if (q && !d.el.hidden) d.el.open = true;
+      });
+
+      if (!filtered && saved) {
+        data.forEach(function (d, k) { d.el.open = saved[k]; });
+        saved = null;
+      }
+      if (!q && region !== 'all') {
+        data.forEach(function (d) { if (!d.el.hidden) d.el.open = true; });
+      }
+
+      var msg;
+      if (!q) {
+        msg = region === 'all'
+          ? 'Showing all ' + total + ' publications in ' + data.length + ' regions.'
+          : 'Showing ' + scope + plural(scope) + where + '.';
+      } else {
+        msg = shown + ' of ' + scope + plural(scope) + where + (shown === 1 ? ' matches ' : ' match ') +
+              '\u201c' + raw + '\u201d.' + (shown ? '' : ' Try an outlet name, a region or an industry.');
+      }
+      status.textContent = msg;
+      updateToggle();
+    }
+
+    row.addEventListener('change', function (e) {
+      if (e.target && e.target.name === 'blc-region') { region = e.target.value; apply(); }
+    });
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      timer = setTimeout(apply, 160);
+    });
+    input.addEventListener('keydown', function (e) {
+      if ((e.key === 'Escape' || e.key === 'Esc') && input.value) {
+        e.preventDefault();
+        input.value = '';
+        clearTimeout(timer);
+        apply();
+      }
+    });
+    toggle.addEventListener('click', function () {
+      var vis = visiblePanels();
+      var open = !vis.every(function (d) { return d.el.open; });
+      vis.forEach(function (d) { d.el.open = open; });
+      updateToggle();
+    });
+    data.forEach(function (d) { d.el.addEventListener('toggle', updateToggle); });
+
+    /* A link to a region panel (for example #blc-r-malaysia) opens that panel. If a search or chip filter
+       is hiding it, the filters reset to "All" first so the panel, the chips and the status line agree. */
+    function openFromHash(scroll) {
+      var id = '';
+      try { id = decodeURIComponent(location.hash.slice(1)); } catch (err) { return; }
+      var t = id && document.getElementById(id);
+      if (!t || !t.classList || !t.classList.contains('blc-region')) return;
+      if (t.hidden) {
+        allChip.checked = true;
+        input.value = '';
+        clearTimeout(timer);
+        region = 'all';
+        apply();
+        scroll = true;
+      }
+      t.open = true;
+      if (scroll && t.scrollIntoView) t.scrollIntoView();
+    }
+    window.addEventListener('hashchange', function () { openFromHash(true); });
+
+    apply();
+    tools.hidden = false;
+    openFromHash(false);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 <section class="ed-section ed-body" id="gallery" aria-labelledby="h-gallery">
   <p class="ed-eyebrow">Gallery</p>
   <h2 class="ed-h2" id="h-gallery">More from Kuala Lumpur</h2>
