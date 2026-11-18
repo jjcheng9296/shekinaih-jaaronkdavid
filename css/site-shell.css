@@ -13,7 +13,7 @@ html{scroll-padding-top:76px}
 .ss-bar{position:fixed;top:0;left:0;right:0;z-index:999;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(14px,4vw,56px);background:rgba(8,9,26,.92);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);border-bottom:1px solid rgba(232,184,109,.14)}
 .ss-brand{display:inline-flex;align-items:center;gap:9px;min-width:0;min-height:44px;text-decoration:none;font-family:'Cinzel',serif;font-weight:700;text-transform:uppercase;white-space:nowrap}
 .ss-dot{width:8px;height:8px;border-radius:50%;background:var(--ss-grad);box-shadow:0 0 12px rgba(232,184,109,.55);flex-shrink:0}
-.ss-names{font-size:clamp(8.6px,2.42vw,12.5px);letter-spacing:.08em;overflow:hidden;text-overflow:clip}
+.ss-names{font-size:clamp(9px,2.7vw,12.5px);letter-spacing:.04em;overflow:hidden;text-overflow:clip}
 .ss-g{color:var(--ss-gold-name)}.ss-j{color:rgba(255,255,255,.93)}.ss-s{color:var(--ss-silver)}
 .ss-nav{display:none;align-items:center;gap:clamp(14px,1.6vw,26px)}
 .ss-nav a{position:relative;display:inline-flex;align-items:center;min-height:44px;font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,255,255,.9);text-decoration:none;white-space:nowrap;transition:color .2s}
@@ -56,7 +56,7 @@ body.ss-open{overflow:hidden}
 .ss-foot a{display:inline-flex;align-items:center;min-height:44px;font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:rgba(255,255,255,.88);text-decoration:none}
 .ss-foot a:hover{color:var(--ss-gold)}
 .ss-foot-mail{margin:4px auto 0;max-width:900px;font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.9;color:rgba(255,255,255,.82)}
-.ss-foot-mail a{color:var(--ss-gold);text-decoration:none;display:inline-block;padding:6px 0}
+.ss-foot-mail a{color:var(--ss-gold);text-decoration:none;display:inline-block;padding:9px 0}
 .ss-foot-mail a:hover{text-decoration:underline}
 
 /* Related pages strip */
@@ -84,3 +84,10 @@ body.ss-open{overflow:hidden}
 
 /* Long button labels wrap on small phones instead of widening the page */
 @media(max-width:480px){.btn-readmore,.btn-ghost{white-space:normal;max-width:100%;line-height:1.35;text-align:center}}
+
+/* review 2026-11-18 */
+.ss-menu-mail a{display:inline-flex;align-items:center;min-height:44px}
+.ss-nav a.ss-cta{min-height:44px}
+a.cx-arrow,span.cx-arrow{width:44px;height:44px}
+button.cx-center{min-height:44px}
+.continue-strip + .ss-crumbs{max-width:1100px;padding-left:clamp(20px,5vw,40px);padding-right:clamp(20px,5vw,40px)}

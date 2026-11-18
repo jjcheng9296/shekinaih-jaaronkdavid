@@ -418,7 +418,7 @@
     .section-body,.story-body,.hero-desc,.section-sub{
       text-align:left;hyphens:manual;-webkit-hyphens:manual;-ms-hyphens:manual;
     }
-    .hero .hero-desc{text-align:center}
+    .hero .hero-desc{text-align:center}@media(max-width:720px){.hero-desc{text-align:left}}
     @media(max-width:760px){
       .section-body,.story-body{text-align:left;line-height:1.85}
       .hero-desc,.section-sub{text-align:left}
@@ -440,7 +440,7 @@
       .hero-pill{font-size:8px;padding:8px 14px;letter-spacing:2px}
       .chapter-label{gap:10px;margin-bottom:18px}
       .chapter-num{padding:5px 9px;font-size:9.5px;letter-spacing:2px}
-      .chapter-eyebrow{font-size:8.5px;letter-spacing:3px}
+      .chapter-eyebrow{font-size:11px;letter-spacing:2px}
       .pull-quote p{font-size:18px !important}
       .pull-quote cite{font-size:8.5px;letter-spacing:2.5px}
       .topbar-badge{font-size:8px;padding:7px 12px;letter-spacing:1.5px}
@@ -589,14 +589,14 @@ details.ed-transcript[open] summary::after{content:"\2212"}
 /* Chapters 13-16 (2026-10-13): mobile-first story order, watch modules near the top, quieter labels,
    chapter bar that never covers the opening screen. Prose never animates. */
 .ed-open{padding-top:80px}
-.ed-kicker{font-size:10.5px;letter-spacing:1.4px;color:rgba(232,184,109,.88);margin-bottom:8px}
+.ed-kicker{font-size:12px;letter-spacing:1.2px;color:rgba(232,184,109,.88);margin-bottom:8px}
 .ed-lead{font-size:17.5px;line-height:1.62}
 .ed-lead + .ed-lead{margin-top:10px}
 .ed-proof{margin-top:10px;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.82)}
 .ed-proof a{color:var(--gold2);border-bottom:1px solid rgba(232,184,109,.35)}
 .ed-hero img{animation:ed-settle .7s ease-out both}
 @keyframes ed-settle{from{transform:scale(1.025)}to{transform:none}}
-.ed-chips{display:flex;flex-wrap:wrap;gap:8px;max-width:900px;margin:14px auto 0;padding:0 clamp(16px,5vw,40px)}
+.ed-chips{display:flex;flex-wrap:wrap;gap:8px;max-width:780px;margin:14px auto 0;padding:0 clamp(16px,5vw,40px)}
 .ed-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 15px;border-radius:999px;border:1px solid rgba(232,184,109,.45);
   font-family:'Cinzel',serif;font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold2);background:rgba(232,184,109,.06)}
 .ed-chip:hover,.ed-chip:focus-visible{background:rgba(232,184,109,.16);color:#fff}
@@ -716,7 +716,7 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
    "eventStatus": "https://schema.org/EventScheduled",
    "location": {
     "@type": "Place",
-    "name": "Two Seasons Hotel Apartments",
+    "name": "Two Seasons Hotel & Apartments",
     "address": "Dubai Internet City, Dubai, UAE"
    },
    "organizer": {
@@ -768,7 +768,7 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
  ]
 }
 </script>
-<link rel="stylesheet" href="css/site-shell.css?v=20261117a">
+<link rel="stylesheet" href="css/site-shell.css?v=20261118a">
 </head>
 <body>
 
@@ -816,16 +816,16 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
 <header class="ed-open">
   <p class="ed-kicker">Dubai · 12 December 2026 · The Prime Today</p>
   <h1 class="ed-h1">Global Icons of Leadership &amp; Business Excellence 2026</h1>
-  <p class="ed-lead">The Prime Today has named <span class="name-inline-gold">PROF.&nbsp;(HON.)&nbsp;DR.</span> <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> and <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span> the <strong>Chief Guests of Honour</strong> of Global Icons of Leadership &amp; Business Excellence 2026, on 12 December 2026 at Two Seasons Hotel Apartments, Dubai Internet City.</p>
+  <p class="ed-lead">The Prime Today has named <span class="name-inline-gold">PROF.&nbsp;(HON.)&nbsp;DR.</span> <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> and <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span> the <strong>Chief Guests of Honour</strong> of Global Icons of Leadership &amp; Business Excellence 2026, on 12 December 2026 at Two Seasons Hotel &amp; Apartments, Dubai Internet City.</p>
 </header>
 <figure class="ed-figure ed-hero">
   <button type="button" class="ed-zoom zoom-trigger" aria-label="Enlarge photo: Dubai · 12 December 2026"
-        data-lb-src="images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg" data-lb-label="Dubai · 12 December 2026" data-lb-caption="Chief Guests of Honour, as announced by The Prime Today."><img src="images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg" srcset="images/magazines/prime-today-dubai-2026/chief-guests-of-honour-640.jpg 640w, images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg 1086w" sizes="(min-width:1040px) 1000px, 100vw" width="1086" height="1448" alt="The Prime Today's Chief Guest of Honour graphic with PROF. (HON.) DR. SHEKINAIH SIEW SIN YAP and DR. J AARON K DAVID" loading="eager" fetchpriority="high"/></button>
+        data-lb-src="images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg" data-lb-label="Dubai · 12 December 2026" data-lb-caption="Chief Guests of Honour, as announced by The Prime Today."><img src="images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg" srcset="images/magazines/prime-today-dubai-2026/chief-guests-of-honour-640.jpg 480w, images/magazines/prime-today-dubai-2026/chief-guests-of-honour.jpg 1086w" sizes="(min-width:1040px) 1000px, 100vw" width="1086" height="1448" alt="The Prime Today's Chief Guest of Honour graphic with PROF. (HON.) DR. SHEKINAIH SIEW SIN YAP and DR. J AARON K DAVID" loading="eager" fetchpriority="high"/></button>
   <figcaption>Chief Guests of Honour, as announced by The Prime Today.</figcaption>
 </figure>
 <aside class="ed-facts" aria-label="At a glance">
   <p class="ed-eyebrow">At a glance</p>
-  <dl><div><dt>Event</dt><dd>Global Icons of Leadership &amp; Business Excellence 2026</dd></div><div><dt>Date</dt><dd>12 December 2026</dd></div><div><dt>Venue</dt><dd>Two Seasons Hotel Apartments, Dubai Internet City, UAE</dd></div><div><dt>Organiser</dt><dd>The Prime Today</dd></div><div><dt>Chief Guests of Honour</dt><dd><span class="name-inline-gold">PROF.&nbsp;(HON.)&nbsp;DR.</span> <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> · <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span></dd></div><div><dt>Partners</dt><dd>CE GLOBAL NETWORK INTERNATIONAL · CROWNED EAGLES GLOBAL</dd></div><div><dt>Event page</dt><dd><a href="https://theprimetoday.com/global-icons-of-leadership-business-excellence/" rel="noopener" target="_blank">The Prime Today</a></dd></div></dl>
+  <dl><div><dt>Event</dt><dd>Global Icons of Leadership &amp; Business Excellence 2026</dd></div><div><dt>Date</dt><dd>12 December 2026</dd></div><div><dt>Venue</dt><dd>Two Seasons Hotel &amp; Apartments, Dubai Internet City, UAE</dd></div><div><dt>Organiser</dt><dd>The Prime Today</dd></div><div><dt>Chief Guests of Honour</dt><dd><span class="name-inline-gold">PROF.&nbsp;(HON.)&nbsp;DR.</span> <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> · <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span></dd></div><div><dt>Partners</dt><dd>CE GLOBAL NETWORK INTERNATIONAL · CROWNED EAGLES GLOBAL</dd></div><div><dt>Event page</dt><dd><a href="https://theprimetoday.com/global-icons-of-leadership-business-excellence/" rel="noopener" target="_blank">The Prime Today</a></dd></div></dl>
 </aside>
 <nav class="ed-chips" aria-label="On this page"><a class="ed-chip primary" href="#guests">Chief Guests of Honour</a><a class="ed-chip" href="#agenda">The day</a><a class="ed-chip" href="#partners">Partners</a></nav>
 <section class="ed-section ed-body" id="guests" aria-labelledby="h-guests">
@@ -1028,8 +1028,8 @@ body{padding-bottom:96px}
     <h2 class="cx-h">The Chronicle · Nineteen Chapters</h2>
     <ul class="cx-list">
       <li><a class="" href="us-megasuccess2025.html"><span class="cx-num">01</span><span><span class="cx-ti">MegaSuccess — Los Angeles</span><span class="cx-da">November 2025</span></span></a></li>
-      <li><a class="" href="manila-up-gala.html"><span class="cx-num">02</span><span><span class="cx-ti">Manila Up — Red Carpet & Feature</span><span class="cx-da">2025</span></span></a></li>
-      <li><a class="" href="hollywood-walk-of-fame-2025.html"><span class="cx-num">03</span><span><span class="cx-ti">Hollywood — Walk of Fame</span><span class="cx-da">2025</span></span></a></li>
+      <li><a class="" href="manila-up-gala.html"><span class="cx-num">02</span><span><span class="cx-ti">Manila Up — Red Carpet & Feature</span><span class="cx-da">November 2025</span></span></a></li>
+      <li><a class="" href="hollywood-walk-of-fame-2025.html"><span class="cx-num">03</span><span><span class="cx-ti">Hollywood — Walk of Fame</span><span class="cx-da">November 2025</span></span></a></li>
       <li><a class="" href="his-presence-fire-cathedral-2025.html"><span class="cx-num">04</span><span><span class="cx-ti">His Presence Fire — Los Angeles</span><span class="cx-da">November 2025</span></span></a></li>
       <li><a class="" href="gls-thailand-2025.html"><span class="cx-num">05</span><span><span class="cx-ti">Bangkok — UNPKFC Certificate of Honor</span><span class="cx-da">December 2025</span></span></a></li>
       <li><a class="" href="dalai-lama-audience-2026.html"><span class="cx-num">06</span><span><span class="cx-ti">Audience with His Holiness the Dalai Lama</span><span class="cx-da">January 2026</span></span></a></li>

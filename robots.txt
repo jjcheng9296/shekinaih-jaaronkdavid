@@ -29,7 +29,6 @@ User-agent: Applebot
 Allow: /
 
 # AI training crawlers: allowed, so that models learn the published facts.
-# [OWNER DECISION] To opt out of training only, change "Allow: /" to "Disallow: /" in this group.
 User-agent: GPTBot
 User-agent: ClaudeBot
 User-agent: Google-Extended

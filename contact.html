@@ -418,7 +418,7 @@
     .section-body,.story-body,.hero-desc,.section-sub{
       text-align:left;hyphens:manual;-webkit-hyphens:manual;-ms-hyphens:manual;
     }
-    .hero .hero-desc{text-align:center}
+    .hero .hero-desc{text-align:center}@media(max-width:720px){.hero-desc{text-align:left}}
     @media(max-width:760px){
       .section-body,.story-body{text-align:left;line-height:1.85}
       .hero-desc,.section-sub{text-align:left}
@@ -440,7 +440,7 @@
       .hero-pill{font-size:8px;padding:8px 14px;letter-spacing:2px}
       .chapter-label{gap:10px;margin-bottom:18px}
       .chapter-num{padding:5px 9px;font-size:9.5px;letter-spacing:2px}
-      .chapter-eyebrow{font-size:8.5px;letter-spacing:3px}
+      .chapter-eyebrow{font-size:11px;letter-spacing:2px}
       .pull-quote p{font-size:18px !important}
       .pull-quote cite{font-size:8.5px;letter-spacing:2.5px}
       .topbar-badge{font-size:8px;padding:7px 12px;letter-spacing:1.5px}
@@ -589,14 +589,14 @@ details.ed-transcript[open] summary::after{content:"\2212"}
 /* Chapters 13-16 (2026-10-13): mobile-first story order, watch modules near the top, quieter labels,
    chapter bar that never covers the opening screen. Prose never animates. */
 .ed-open{padding-top:80px}
-.ed-kicker{font-size:10.5px;letter-spacing:1.4px;color:rgba(232,184,109,.88);margin-bottom:8px}
+.ed-kicker{font-size:12px;letter-spacing:1.2px;color:rgba(232,184,109,.88);margin-bottom:8px}
 .ed-lead{font-size:17.5px;line-height:1.62}
 .ed-lead + .ed-lead{margin-top:10px}
 .ed-proof{margin-top:10px;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,.82)}
 .ed-proof a{color:var(--gold2);border-bottom:1px solid rgba(232,184,109,.35)}
 .ed-hero img{animation:ed-settle .7s ease-out both}
 @keyframes ed-settle{from{transform:scale(1.025)}to{transform:none}}
-.ed-chips{display:flex;flex-wrap:wrap;gap:8px;max-width:900px;margin:14px auto 0;padding:0 clamp(16px,5vw,40px)}
+.ed-chips{display:flex;flex-wrap:wrap;gap:8px;max-width:780px;margin:14px auto 0;padding:0 clamp(16px,5vw,40px)}
 .ed-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 15px;border-radius:999px;border:1px solid rgba(232,184,109,.45);
   font-family:'Cinzel',serif;font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold2);background:rgba(232,184,109,.06)}
 .ed-chip:hover,.ed-chip:focus-visible{background:rgba(232,184,109,.16);color:#fff}
@@ -740,7 +740,7 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
 }
 </script>
 <style id="bc-css">.bc{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;max-width:780px;margin:18px auto 0;padding:clamp(20px,4vw,34px);border:1px solid rgba(232,184,109,.28);border-radius:22px;background:linear-gradient(150deg,rgba(232,184,109,.09),rgba(18,21,43,.6) 55%);text-align:left}.bc-qr{width:min(100%,230px);padding:12px;border-radius:18px;background:#FFFDF8;box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 0 1px rgba(232,184,109,.55)}.bc-qr img{display:block;width:100%;height:auto;border-radius:8px}.bc-name{font-family:'Cinzel',serif;font-size:clamp(18px,2.4vw,24px);font-weight:700;letter-spacing:.04em;line-height:1.35;margin:6px 0 6px}.bc-role{font-family:'Cinzel',serif;font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:rgba(221,227,238,.8);margin:0 0 12px}.bc-note{font-size:16px;line-height:1.6;color:rgba(255,255,255,.88);margin:0 0 16px;max-width:440px}@media(max-width:699px){.bc{justify-items:center;text-align:center}.bc-note{margin-left:auto;margin-right:auto}.bc .ct-actions{justify-content:center}.bc-x{display:flex;flex-direction:column;align-items:center}}@media(min-width:700px){.bc{grid-template-columns:230px 1fr;gap:34px}}</style>
-<link rel="stylesheet" href="css/site-shell.css?v=20261117a">
+<link rel="stylesheet" href="css/site-shell.css?v=20261118a">
 </head>
 <body>
 
@@ -790,6 +790,7 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
   <h1 class="ed-h1">Contact Us</h1>
   <p class="ed-lead">Write to <span class="name-inline-gold">PROF.&nbsp;(HON.)&nbsp;DR.</span> <span class="name-inline-gold">SHEKINAIH SIEW SIN YAP</span> and <span class="name-inline-silver">DR.&nbsp;J AARON K DAVID</span> at Crowned Eagles Global. Every message is read by the team.</p>
 </header>
+<nav class="ed-chips" aria-label="On this page"><a class="ed-chip primary" href="#write">Email</a><a class="ed-chip" href="#card">Business card</a><a class="ed-chip" href="#topics">What to write about</a><a class="ed-chip" href="#follow">Follow the work</a></nav>
 <section class="ct-wrap" id="write" aria-labelledby="h-write">
 <div class="ct-card">
   <p class="ct-eyebrow" id="h-write">Email</p>
@@ -811,7 +812,6 @@ details.ed-transcript[open] summary{border-bottom:1px solid rgba(232,184,109,.25
   </div>
 </div>
 </section>
-<nav class="ed-chips" aria-label="On this page"><a class="ed-chip primary" href="#write">Email</a><a class="ed-chip" href="#card">Business card</a><a class="ed-chip" href="#topics">What to write about</a><a class="ed-chip" href="#follow">Follow the work</a></nav>
 <section class="ed-section ed-body" id="topics" aria-labelledby="h-topics">
   <p class="ed-eyebrow">How we can help</p>
   <h2 class="ed-h2" id="h-topics">What to Write About</h2>
@@ -988,8 +988,8 @@ body{padding-bottom:96px}
     <h2 class="cx-h">The Chronicle · Nineteen Chapters</h2>
     <ul class="cx-list">
       <li><a class="" href="us-megasuccess2025.html"><span class="cx-num">01</span><span><span class="cx-ti">MegaSuccess — Los Angeles</span><span class="cx-da">November 2025</span></span></a></li>
-      <li><a class="" href="manila-up-gala.html"><span class="cx-num">02</span><span><span class="cx-ti">Manila Up — Red Carpet & Feature</span><span class="cx-da">2025</span></span></a></li>
-      <li><a class="" href="hollywood-walk-of-fame-2025.html"><span class="cx-num">03</span><span><span class="cx-ti">Hollywood — Walk of Fame</span><span class="cx-da">2025</span></span></a></li>
+      <li><a class="" href="manila-up-gala.html"><span class="cx-num">02</span><span><span class="cx-ti">Manila Up — Red Carpet & Feature</span><span class="cx-da">November 2025</span></span></a></li>
+      <li><a class="" href="hollywood-walk-of-fame-2025.html"><span class="cx-num">03</span><span><span class="cx-ti">Hollywood — Walk of Fame</span><span class="cx-da">November 2025</span></span></a></li>
       <li><a class="" href="his-presence-fire-cathedral-2025.html"><span class="cx-num">04</span><span><span class="cx-ti">His Presence Fire — Los Angeles</span><span class="cx-da">November 2025</span></span></a></li>
       <li><a class="" href="gls-thailand-2025.html"><span class="cx-num">05</span><span><span class="cx-ti">Bangkok — UNPKFC Certificate of Honor</span><span class="cx-da">December 2025</span></span></a></li>
       <li><a class="" href="dalai-lama-audience-2026.html"><span class="cx-num">06</span><span><span class="cx-ti">Audience with His Holiness the Dalai Lama</span><span class="cx-da">January 2026</span></span></a></li>
