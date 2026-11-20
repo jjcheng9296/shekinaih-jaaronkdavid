@@ -6,7 +6,7 @@
   if (!root) return;
   var BASE = root.getAttribute('data-base'), NUMS = root.getAttribute('data-pages').split(',').map(Number);
   var LAST = +root.getAttribute('data-last') || NUMS[NUMS.length - 1], NAME = root.getAttribute('data-name') || 'Magazine';
-  var AR = 1219 / 1600, reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var AR = +root.getAttribute('data-ar') || 1219 / 1600, reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   function pad(n) { return ('00' + n).slice(-3); }
   var P = NUMS.map(function (n) { var f = BASE + 'p' + pad(n); return { n: n, s: f + '-640.jpg', m: f + '.jpg', h: f + '-hd.jpg', t: f + '-th.jpg' }; });
   var IC = {
